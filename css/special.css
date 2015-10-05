@@ -33,3 +33,13 @@
 .fix-silk img{position:absolute;left:50%;top:-7px;width:48px;height:129px;margin-left:-18px;cursor:pointer;}
 
 .site-more{display:none;float:left;width:100%;}
+
+@media screen and (min-width:1400px) and (max-width:1500px){
+	.main-top{margin-top:45px;}
+}
+@media screen and (min-width:1501px) and (max-width:1600px){
+	.main-top{margin-top:55px;}
+}
+@media screen and (min-width:1601px){
+	.main-top{margin-top:70px;}
+}

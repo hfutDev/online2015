@@ -1,7 +1,52 @@
 .m-content{
 	position:absolute;
-	width:87.5%;
+	background: url(../images/index/bg.jpg) 100%  100%;
+}
+.m-cloud{
+	position:absolute;
+	overflow: hidden;
+}
+.m-cloud img{
+	position:relative;
+	width:100%;
 	height:100%;
-	margin-left:12.5%;
-	background-color: #000;
+}
+.m-cloud-left{
+	left:-145px;	
+}
+.m-cloud-right{
+	top:-166px;
+	left:200px;
+}
+.m-logo{
+	position:absolute;
+	width:275px;
+	height:400px;
+	top:50%;
+	left:50%;
+	margin-left: -136px;
+	margin-top:-200px;
+	color:#fff;
+	/*background-color: purple;*/
+}
+.m-logo-left{
+	width:250px;
+	text-align: center;
+	display: inline-block;
+}
+.m-logo-text{
+	width:36px;
+	margin:0 auto;
+	font-size: 36px;
+}
+.m-logo-right{
+	font-size: 18px;
+	line-height:20px;
+	width:18px;
+	display: inline-block;
+}
+.m-nav-clock{
+	width:200px;
+	height:200px;
+	background-color: red;
 }

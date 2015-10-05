@@ -32,4 +32,4 @@
 .fix-silk{position:relative;height: 140px;}
 .fix-silk img{position:absolute;left:50%;top:-7px;width:48px;height:129px;margin-left:-18px;cursor:pointer;}
 
-.site-more{display:none;float:left;}
+.site-more{display:none;float:left;width:100%;}

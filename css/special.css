@@ -1,0 +1,45 @@
+/**
+*@author yu
+*@time 2015.10.5
+*@desc css for sites ,special page
+*/
+.shadow{box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);}
+.content{background-color:#5f236e;}
+.main-top{margin-top:40px;}
+.line-top{margin-top:1px;}
+.sites-head{width:18.4%;height:100%;float:left;color:#D6AF7C;    overflow: hidden;}
+.sites-group{width:27.2%;height:100%;float:left;}
+
+.sites-title{text-align:center;height:100%;width:26px;float:left;}
+.sites-title img{width:100%;height:20px;}
+.sites-title span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;}
+.sites-desc{text-align:center;height:100%;width:80px;float:left;margin-top:102px;margin-left:18%;}
+.sites-desc span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;width:20px;font-size:13px;}
+/*one site*/
+.site-one{width:86%;float:left;max-width:250px;_width:250px;}
+
+.site-black{width:100%;height:21px;float:left;position:relative;background-color:#000;}
+.site-black img{position: absolute;left:50%;top:-7px;width:20px;height:14px;margin-left:-10px;}
+.site-body{width:90%;margin:0 5%;height:186px;float:left;background-color:#fff;}
+.site-title{width:100%;height:28px;float:left;font-size:14px;color:#000;line-height:28px;letter-spacing:1.2px;padding-left:10px;}
+.site-img{width:100%;height:135px;float:left;}
+.site-link{height:23px;float:right;line-height:21px;margin-right:10px;}
+.site-link img{width:16px;height:12px;float:left;display:inline-block;margin-top:6px;margin-right: 2px;}
+.site-link span{font-size:12px;text-align:center;color:#DBB37D;display:inline-block;letter-spacing:1.2px;}
+.get-site-more{float:left;}
+.site-more-link{float:left;width:90%;margin:0 5%;background-color:#fff;font-size:12px;height:22px;line-height:22px;cursor:pointer;}
+.site-more-link span{display: inline-block;float:right;margin-right:10px;letter-spacing:1.2px;}
+.fix-silk{position:relative;height: 140px;}
+.fix-silk img{position:absolute;left:50%;top:-7px;width:48px;height:129px;margin-left:-18px;cursor:pointer;}
+
+.site-more{display:none;float:left;width:100%;}
+
+@media screen and (min-width:1400px) and (max-width:1500px){
+	.main-top{margin-top:45px;}
+}
+@media screen and (min-width:1501px) and (max-width:1600px){
+	.main-top{margin-top:55px;}
+}
+@media screen and (min-width:1601px){
+	.main-top{margin-top:70px;}
+}

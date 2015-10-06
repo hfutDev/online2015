@@ -1,0 +1,27 @@
+/*
+@author yu
+@time 2015.10.3
+@des mly hfut
+*/
+/*common css*/
+html, body{width:100%;height:100%;min-height:700px;min-width:1200px;}
+body{font-family: 'Microsoft YaHei', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+/*page*/
+.nav{width:12.5%;height:100%;background-image:url(../images/nav/nav_bg.png);background-size:cover;color:#bbb;float:left;position:relative;}
+.content{width:87.5%;height:100%;float:left;background-color:#eae4d4;}
+.main{margin:0 10%;width:80%;height:100%;}
+/*nav*/
+.logo{width:48px;margin:0 auto;margin-top:24px;display:block;}
+.logo img{width:48px;height:48px;}
+.logo span{font-size:12px;color:#ddd;}
+.nav ul{padding-left:0;margin-top:26px;}
+.nav ul li{width:70px;height:30px;font-size:14px;text-align:center;margin:0 auto;margin-bottom:20px;}
+.nav ul li a{display:block;width:inherit;height:inherit;color:#bbb;}
+.nav ul li a:hover{color:#ffe048;background-image:url(../images/nav/nav_hover.png);}
+.nav-other{width: 100%;position:absolute;bottom:20px;left:0;}
+.nav-other-one{width:56px;margin:0 auto;text-align:center;height:64px;margin-bottom:20px;display:block;}
+.nav-other-one img{width:38px;height:38px;margin:0 auto;margin-bottom:3px;}
+.nav-other-one span{font-size:12px;color:#666;margin-left:4px;}
+

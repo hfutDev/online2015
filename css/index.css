@@ -45,8 +45,58 @@
 	width:18px;
 	display: inline-block;
 }
-.m-nav-clock{
-	width:200px;
-	height:200px;
-	background-color: red;
+.m-clock-study{
+	position: absolute;
+	top:190px;
+	left:-430px;
+	width:140px;
+	height:140px;
+	color:#8f82bc;
+	background:url(../images/index/flower-xuexi.svg) 100% 100%;
+}
+.m-clock-idea{
+	position: absolute;
+	top:0px;
+	left:-290px;
+	width:130px;
+	height:130px;
+	color:#13b5b1;
+	background:url(../images/index/flower-guandian.svg) 100% 100%;
+}
+.m-clock-news{
+	position: absolute;
+	top:210px;
+	left:-195px;
+	width:170px;
+	height:170px;
+	color:#8f82bc;
+	background:url(../images/index/flower-zixun.svg) 100% 100%;
+}
+.m-clock-service{
+	position: absolute;
+	top:30px;
+	left:350px;
+	width:160px;
+	height:160px;
+	color:#13b5b1;
+	background:url(../images/index/flower-fuwu.svg) 100% 100%;
+}
+.m-clock-qa{
+	position: absolute;
+	top:210px;
+	left:500px;
+	width:180px;
+	height:180px;
+	color:#8f82bc;
+	background:url(../images/index/flower-hudong.svg) 100% 100%;
+}
+.m-nav-text{
+	width:18px;
+	height: 36px;
+	margin:0px auto;
+	margin-top: calc(50% - 18px);
+	margin-top: -moz-calc(50% - 18px);
+	margin-top: -webkit-calc(50% - 18px);
+	font-size: 18px;
+	line-height: 18px;
 }

@@ -26,12 +26,28 @@
 .paint-light-4{
     left: 710px;
 }
+.instruction-title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tb-lr{-webkit-writing-mode:vertical-lr;writing-mode:tb-rl;writing-mode:vertical-lr;}
+.ins-1{
+    position: absolute;
+    left: -80px;
+    top: -8px;
+}
+.ins-2{
+    position: absolute;
+    left: -80px;
+    top:440px;
+}
 .img-all{
     float: left;
-    cursor: pointer;
 }
 .img-universal{
     padding: 20px;
+    cursor: pointer;
     background-color: #fff;
     border: 15px solid #362e2b;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.35);

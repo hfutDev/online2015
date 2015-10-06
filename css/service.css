@@ -54,14 +54,13 @@
 }
 .img-content{
     position: absolute;
-    overflow: scroll;
+    overflow: hidden;
     background-color: #eae4d4;
     font-size: 14px;
     color: #362e2b;
     top: 0;
     display: none;
     text-indent: 2em;
-
 }
 .img-content:hover{
     background-color: #362e2b;

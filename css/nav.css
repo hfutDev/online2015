@@ -9,8 +9,8 @@ body{font-family: 'Microsoft YaHei', 'Source Sans Pro', 'Helvetica Neue', Helvet
 ul,li{list-style:none;}
 a{text-decoration:none;}
 /*page*/
-.nav{width:12.5%;height:100%;background-image:url(../images/nav/nav_bg.png);background-size:cover;color:#bbb;/*float:left;*/position:fixed;}
-.content{width:87.5%;height:100%;float:left;background-color:#eae4d4;margin-left: 12.5%;overflow: auto;}
+.nav{width:12.5%;height:100%;background-image:url(../images/nav/nav_bg.png);background-size:cover;color:#bbb;float:left;position:relative;}
+.content{width:87.5%;height:100%;/*float:left;*/background-color:#eae4d4;margin-left: 12.5%;overflow: auto;}
 .main{margin:0 10%;width:80%;height:100%;}
 /*nav*/
 .logo{width:48px;margin:0 auto;margin-top:24px;display:block;}

@@ -14,21 +14,21 @@
 
 /*云动画*/
 @keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0;}
+	0%   {top:0px; left: -1160px;opacity: 0.7;}
 	100% {top:0px; left:1300px;opacity: 1;}
 }
 @-webkit-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0;}
+	0%   {top:0px; left: -1160px;opacity: 0.7;}
 	100% {top:0px; left:1300px;opacity: 1;}
 }
 
 @-moz-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0;}
+	0%   {top:0px; left: -1160px;opacity: 0.7;}
 	100% {top:0px; left:1300px;opacity: 1;}
 }
 
 @-o-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0;}
+	0%   {top:0px; left: -1160px;opacity: 0.7;}
 	100% {top:0px; left:1300px;opacity: 1;}
 }
 .m-cloud-left{
@@ -41,21 +41,21 @@
 }
 @keyframes cloudright{
 	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0;}
+	100% {top:-166px; left:-1200px;opacity: 0.7;}
 }
 @-webkit-keyframes cloudright{
 	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0;}
+	100% {top:-166px; left:-1200px;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudright{
 	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0;}
+	100% {top:-166px; left:-1200px;opacity: 0.7;}
 }
 
 @-o-keyframes cloudright{
 	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0;}
+	100% {top:-166px; left:-1200px;opacity: 0.7;}
 }
 .m-cloud-right{
 	top:-166px;

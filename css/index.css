@@ -11,12 +11,60 @@
 	width:100%;
 	height:100%;
 }
+
+/*云动画*/
+@keyframes cloudleft{
+	0%   {top:0px; left: -1160px;opacity: 0;}
+	100% {top:0px; left:1300px;opacity: 1;}
+}
+@-webkit-keyframes cloudleft{
+	0%   {top:0px; left: -1160px;opacity: 0;}
+	100% {top:0px; left:1300px;opacity: 1;}
+}
+
+@-moz-keyframes cloudleft{
+	0%   {top:0px; left: -1160px;opacity: 0;}
+	100% {top:0px; left:1300px;opacity: 1;}
+}
+
+@-o-keyframes cloudleft{
+	0%   {top:0px; left: -1160px;opacity: 0;}
+	100% {top:0px; left:1300px;opacity: 1;}
+}
 .m-cloud-left{
-	left:-145px;	
+	left:-1160px;	
+	animation: cloudleft 60s linear 0s normal infinite;
+	-webkit-animation: cloudleft 60s linear 0s normal infinite;
+	-moz-animation: cloudleft 60s linear 0s normal infinite;
+	-ms-animation: cloudleft 60s linear 0s normal infinite;
+	-o-animation: cloudleft 60s linear 0s normal infinite;
+}
+@keyframes cloudright{
+	0%   {top:-166px; left: 1300px;opacity: 1;}
+	100% {top:-166px; left:-1200px;opacity: 0;}
+}
+@-webkit-keyframes cloudright{
+	0%   {top:-166px; left: 1300px;opacity: 1;}
+	100% {top:-166px; left:-1200px;opacity: 0;}
+}
+
+@-moz-keyframes cloudright{
+	0%   {top:-166px; left: 1300px;opacity: 1;}
+	100% {top:-166px; left:-1200px;opacity: 0;}
+}
+
+@-o-keyframes cloudright{
+	0%   {top:-166px; left: 1300px;opacity: 1;}
+	100% {top:-166px; left:-1200px;opacity: 0;}
 }
 .m-cloud-right{
 	top:-166px;
-	left:200px;
+	left:-1200px;
+	animation: cloudright 80s linear 0s normal infinite;
+	-webkit-animation: cloudright 80s linear 0s normal infinite;
+	-moz-animation: cloudright 80s linear 0s normal infinite;
+	-ms-animation: cloudright 80s linear 0s normal infinite;
+	-o-animation: cloudright 80s linear 0s normal infinite;
 }
 .m-logo{
 	position:absolute;
@@ -102,26 +150,98 @@
 }
   /*旋转动画*/
 @keyframes rotate{
-	0%   {-webkit-transform:rotate(0deg)}
-	100% {-webkit-transform:rotate(360deg)}
+	0%   {transform:rotate(0deg)}
+	100% {transform:rotate(360deg)}
 }
 @-webkit-keyframes rotate{
 	0%   {-webkit-transform:rotate(0deg)}
 	100% {-webkit-transform:rotate(360deg)}
 }
 @-moz-keyframes rotate{
-	0%   {-webkit-transform:rotate(0deg)}
-	100% {-webkit-transform:rotate(360deg)}
+	0%   {-moz-transform:rotate(0deg)}
+	100% {-moz-transform:rotate(360deg)}
 }
 @-ms-keyframes rotate{
-	0%   {-webkit-transform:rotate(0deg)}
-	100% {-webkit-transform:rotate(360deg)}
+	0%   {-ms-transform:rotate(0deg)}
+	100% {-ms-transform:rotate(360deg)}
 }
 @-o-keyframes rotate{
-	0%   {-webkit-transform:rotate(0deg)}
-	100% {-webkit-transform:rotate(360deg)}
+	0%   {-o-transform:rotate(0deg)}
+	100% {-o-transform:rotate(360deg)}
 }
 .m-clock-pic{
 	animation: rotate 10s linear 0s normal infinite;
 	-webkit-animation: rotate 10s linear 0s normal infinite;
+	-moz-animation: rotate 10s linear 0s normal infinite;
+	-ms-animation: rotate 10s linear 0s normal infinite;
+	-o-animation: rotate 10s linear 0s normal infinite;
 }
+.m-wave{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:160px;
+	overflow: hidden;
+}
+ /*波浪动画*/
+@keyframes waveback{
+	0%   {bottom:15%; left:-50%;}
+	50%  {bottom:30%; left:-40%;}
+	100% {bottom:15%; left:-28%;}
+}
+.m-wave-back{
+	position:absolute;
+	bottom:15%;
+	left:-50%;
+	width:150%;
+	height:100px;
+	background:url(../images/index/wave-back.svg) 100% 100%;
+	animation: waveback 5s linear 0s normal infinite;
+	-webkit-animation: waveback 5s linear 0s normal infinite;
+	-moz-animation: waveback 5s linear 0s normal infinite;
+	-ms-animation: waveback 5s linear 0s normal infinite;
+	-o-animation: waveback 5s linear 0s normal infinite;
+}
+@keyframes wavemiddle{
+	0%   {bottom:-10%; left:-50%;}
+	50%  {bottom:10%; left:-35%;}
+	100% {bottom:-10%; left:-20%;}
+}
+.m-wave-middle{
+	position:absolute;
+	bottom:-10%;
+	width:150%;
+	height:100px;
+	background:url(../images/index/wave-middle.svg) 100% 100%;
+	animation: wavemiddle 2s linear 0s normal infinite;
+	-webkit-animation: wavemiddle 2s linear 0s normal infinite;
+	-moz-animation: wavemiddle 2s linear 0s normal infinite;
+	-ms-animation: wavemiddle 2s linear 0s normal infinite;
+	-o-animation: wavemiddle 2s linear 0s normal infinite;
+}
+@keyframes wavefront{
+	0%   {bottom:-35%; left:-50%;}
+	50%  {bottom:-20%; left:-25%;}
+	100% {bottom:-35%; left:0%;}
+}
+.m-wave-front{
+	position:absolute;
+	bottom:-35%;
+	width:150%;
+	height:100px;
+	background:url(../images/index/wave-front.svg) 100% 100%;
+	animation: wavefront 2s linear 0s normal infinite;
+	-webkit-animation: wavefront 2s linear 0s normal infinite;
+	-moz-animation: wavefront 2s linear 0s normal infinite;
+	-ms-animation: wavefront 2s linear 0s normal infinite;
+	-o-animation: wavefront 2s linear 0s normal infinite;
+}
+
+
+
+
+
+
+
+
+

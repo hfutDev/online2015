@@ -9,6 +9,7 @@
     font-size: 20px;
     color: #000000;
     float: left;
+    font-weight: bold;
 }
 
 .main-con {
@@ -77,11 +78,13 @@
     width: 470px;
     height: 20px;
     margin-top: -5px;
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.35);
+
 }
 .con-3{
     position: relative;
     top: -390px;
-    left: 610px;
+    left: 590px;
 }
 .paint{
     margin-left: 50px;
@@ -89,7 +92,7 @@
 .paint-head{
     background-color: #000;
     height: 25px;
-    width: 330px;
+    width: 350px;
     box-shadow: 0 14px 24px 0 rgba(0,0,0,0.35);
 }
 .paint-head-circle{
@@ -106,16 +109,22 @@
 .paint-body{
     background-color: #004986;
     height: 470px;
-    width: 268px;
+    width: 288px;
     margin-left: 6.5px;
     padding: 25px 20px 10px 25px;
     box-shadow: 0 14px 24px 0 rgba(0,0,0,0.35);
     color: #fff;
 }
+.paint-body li{
+    width: 271px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .paint-foot{
     background-color: #000;
     height: 25px;
-    width: 330px;
+    width: 350px;
     box-shadow: 0 14px 24px 0 rgba(0,0,0,0.35);
 }
 .paint-foot-circle{
@@ -142,12 +151,14 @@
 }
 .con-txt{
     font-size: 14px;
-    margin-top: 10px !important;
+    margin-top: 8px !important;
     padding-left: 17px !important;
 }
 .con-txt li{
     list-style: disc;
-
+}
+.con-txt li a{
+    color: #fff;
 }
 .img-content{
     position: absolute;

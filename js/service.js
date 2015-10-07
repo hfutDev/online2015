@@ -10,29 +10,26 @@ $(document).ready(function () {
     var icon2 = $(".icon-2").width();
     var icon3 = $(".icon-3").width();
     var icon4 = $(".icon-4").width();
-    var icon5 = $(".icon-5").
-        width();
+    var icon5 = $(".icon-5").width();
     var icon6 = $(".icon-6").width();
     var icon7 = $(".icon-7").width();
     var icon8 = $(".icon-8").width();
-    var ss = rightmar - icon1 - icon2 - icon3 - icon4 - icon5 - icon6 - icon7 - icon8 - 64;
-    $(".sprite-icon").css("marginRight", ss / 7);
-    $(".sprite-icon").mouseover(function () {
-        var i = $(this).attr("class");
-        i = i.charAt(i.length - 1) - 1;
-        $(".book-shelf").find("span").eq(i).addClass("book-shelf-hover");
-        var x = $(".light-" + (i + 1));
-        x.fadeIn();
-        $(x).siblings().fadeOut();
-        $(".book-shelf").find("span").eq(i).parent().siblings().find("span").removeClass("book-shelf-hover");
+    var ss = rightmar - icon1 - icon2 - icon3 - icon4 - icon5 - icon6 - icon7 - icon8 - 86;
+    $(".sprite-main").find("li").each(function () {
+        if ($(this).index() != 7) {
+            $(this).css("marginRight", ss / 7);
+        }
+        $(this).mouseover(function () {
+            var i = $(this).find("p").eq(1).attr("class");
+            i = i.charAt(i.length - 1) ;
+            $(this).find(".book-"+i).addClass("book-shelf-hover");
+            var x = $(".light-" + (i ));
+            x.fadeIn();
+            $(x).parents("li").siblings("li").find(".light").fadeOut();
+            $(this).siblings("li").find("p").removeClass("book-shelf-hover")
+        });
     });
-    $(".book-shelf").find("span").mouseover(function () {
-        var i = $(this).attr("class");
-        i = i.charAt(i.length - 1);
-        var x = $(".light-" + i);
-        x.fadeIn();
-        $(x).siblings().fadeOut();
-    });
+
 
     $(".img-all").mouseover(function () {
         var i = $(this).attr("class");
@@ -40,14 +37,9 @@ $(document).ready(function () {
         $(".paint-light-" + i).fadeIn();
         $(".paint-light-" + i).siblings().fadeOut();
     });
-    //$(".img-content").each(function () {
-    //    $(this).css({
-    //        "width": $(this).parent("div").width(),
-    //        "height": $(this).parent("div").height()
-    //    });
-    //});
-    $(".img-universal").click(function() {
-        $(this).siblings().find('.img-content').fadeToggle(1,function() {//第一个参数为动画持续时间
+
+    $(".img-universal").click(function () {
+        $(this).siblings().find('.img-content').fadeToggle(1, function () {//第一个参数为动画持续时间
             $(this).addClass('animated flipInY');//给当前元素添加摇晃效果类
         });
     });

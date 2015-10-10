@@ -1,6 +1,8 @@
 .m-content{
 	position:absolute;
-	background: url(../images/index/bg.jpg) 100%  100%;
+	background-image: url(../images/index/bg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
 	overflow: hidden;
 }
 .m-cloud{
@@ -94,6 +96,7 @@
 	width:20%;
 	margin:0 auto;
 	font-size: 36px;
+	line-height: 36px;
 }
 .m-logo-right{
 	width:9%;
@@ -109,6 +112,9 @@
 	color:#8f82bc;
 	cursor: pointer;
 }
+.m-study-text{
+	top:31.14%;
+}
 .m-clock-idea{
 	position: absolute;
 	top:25.26%;
@@ -116,6 +122,9 @@
 	width:7.74%;
 	color:#13b5b1;
 	cursor: pointer;
+}
+.m-idea-text{
+	top:28.92%;
 }
 .m-clock-news{
 	position: absolute;
@@ -125,6 +134,9 @@
 	color:#8f82bc;
 	cursor: pointer;
 }
+.m-news-text{
+	top:34%;
+}
 .m-clock-service{
 	position: absolute;
 	top:33.16%;
@@ -133,6 +145,9 @@
 	color:#13b5b1;
 	cursor: pointer;
 }
+.m-service-text{
+	top:32.38%;
+}
 .m-clock-qa{
 	position: absolute;
 	top:53.15%;
@@ -140,19 +155,16 @@
 	width:10.71%;
 	color:#8f82bc;
 	cursor: pointer;
-	/*display:table;*/
+}
+.m-qa-text{
+	top:35%;
 }
 .m-nav-text{
 	position: absolute;	
 	width:100%;
-	/*height: 30%;*/
-	top:33.21%;
-	/*left:44%;*/
 	font-size: 18px;
 	line-height: 18px;
 	text-align: center;
-	/*vertical-align: middle;*/
-	/*display:table-cell;*/
 }
   /*旋转动画*/
 @keyframes rotate{
@@ -176,6 +188,7 @@
 	100% {-o-transform:rotate(360deg)}
 }
 .m-clock-pic{
+	/*font-size:99px;*/
 	animation: rotate 10s linear 0s normal infinite;
 	-webkit-animation: rotate 10s linear 0s normal infinite;
 	-moz-animation: rotate 10s linear 0s normal infinite;

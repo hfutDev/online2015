@@ -26,30 +26,51 @@
 .paint-light-4{
     left: 710px;
 }
+.instruction-title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tb-lr{-webkit-writing-mode:vertical-lr;writing-mode:tb-rl;writing-mode:vertical-lr;}
+.ins-1{
+    position: absolute;
+    left: -80px;
+    top: -8px;
+}
+.ins-2{
+    position: absolute;
+    top: 74%;
+    left: -80px;
+}
 .img-all{
     float: left;
-    cursor: pointer;
+}
+.img-all a{
+    display: none;
 }
 .img-universal{
     padding: 20px;
+    cursor: pointer;
     background-color: #fff;
     border: 15px solid #362e2b;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.35);
 }
 .img-content{
     position: absolute;
-    overflow: scroll;
+    overflow: hidden;
     background-color: #eae4d4;
     font-size: 14px;
     color: #362e2b;
     top: 0;
-    display: none;
     text-indent: 2em;
-
 }
 .img-content:hover{
     background-color: #362e2b;
     color: #fff;
+}
+.img-content p{
+    margin: 0;
+    padding: 15px;
 }
 .img-con-1{
     height: 200px;
@@ -121,14 +142,31 @@
 }
 .sprite-main{
     width: 100%;
-    height: 75px;
     position: absolute;
-    bottom: 9.8%;
+    top: 73%;
+}
+.sprite-main ul{
+    height: 150px;
+    padding-left: 0 !important;
     margin: 0 32px;
+}
+.sprite-main li{
+    float: left;
+    text-align: center;
+}
+/*.sprite-main ul li a p:hover{*/
+    /*color: #fff;*/
+    /*cursor: pointer;*/
+/*}*/
+.sprite-main li a p{
+    font-size: 14px;
+    color: #a6937c;
+}
+.sprite-main p:nth-child(2){
+    margin-top: -12px;
 }
 .sprite-icon{
     overflow:hidden;
-    float: left;
     height: 75px;
     background:url(../images/service/icon-fuben.png) no-repeat;
 }
@@ -141,6 +179,7 @@
 }
 .icon-3{
     width: 52px;
+    margin-left: 9px;
     background-position: -223px 0px;
 }
 .icon-4{
@@ -162,66 +201,30 @@
 .icon-8{
     width: 62px;
     background-position: -693px 0px;
-    margin-right: 32px !important;
 }
 .book-shelf{
     height: 22.5px;
     width: 100%;
     background-color: #362e2b;
-    position: absolute;
-    bottom: 6%;
+    margin-top: -61px;
 }
-.book-shelf span{
-    font-size: 14px;
-    color: #a6937c;
-}
-.book-shelf span:hover{
-    color: #fff;
-    cursor: pointer;
-}
+/*.book-shelf span{*/
+    /*font-size: 14px;*/
+    /*color: #a6937c;*/
+/*}*/
+/*.book-shelf span:hover{*/
+    /*color: #fff;*/
+    /*cursor: pointer;*/
+/*}*/
 .book-shelf-hover{
     color: #fff !important;
     cursor: pointer !important;
 }
-.book-1{
-    margin-left:58px;
-}
-.book-2{
-    margin-left:65px;
-}
-.book-3{
-    margin-left:42px;
-}
-.book-4{
-    margin-left:44px;
-}
-.book-5{
-    margin-left:58px;
-}
-.book-6{
-    margin-left:57px;
-}
-.book-7{
-    margin-left:58px;
-}
-.book-8{
-    margin-left:49px;
-}
 
-.sprite-light{
+.light{
     position: absolute;
-    bottom: 21%;
-    width: 102%;
-}
-.sprite-light div{
-    float: left;
-    position: absolute;
+    top: 24px;
     display: none;
-}
-.sprite-light div:hover{
-    cursor: pointer;
-}
-.sprite-light div img{
 }
 .light-1{
     left: 9px;
@@ -230,13 +233,13 @@
     left: 136px;
 }
 .light-3{
-    left: 244px;
+    left: 247px;
 }
 .light-4{
-    left: 356px;
+    left: 366px;
 }
 .light-5{
-    left: 475px;
+    left: 477px;
 }
 .light-6{
     left: 596px;
@@ -247,6 +250,7 @@
 .light-8{
     left: 830px;
 }
+
 
 .animated {
     -webkit-animation-duration: 1s;

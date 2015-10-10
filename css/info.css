@@ -1,0 +1,50 @@
+.info-img{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.info-img img{
+    width: 230px;
+    display: block;
+    padding: 8px;
+}
+.info-left{
+    float: left;
+}
+.info-list{
+    width: 50%;
+    float: left;
+}
+.info-list li{
+    padding: 9px 0;
+    border-top: 1px solid #777777;
+}
+.info-list li a{
+    width: 78%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+.info-list li span{
+    float: right;
+    color: #777;
+    padding: 0 6px;
+    font-size: 14px;
+}
+.info-more{
+    padding-left: 40px;
+    text-align: center;
+    display: block;
+}
+.info-more a{
+    color: #019cec !important;
+    font-size: 18px;
+}
+.info-more span{
+    display: inline-block;
+    background-image: url(../images/info/narrow.png);
+    width: 24px;
+    height: 13px;
+}

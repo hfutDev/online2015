@@ -75,10 +75,11 @@
 .m-logo{
 	position:absolute;
 	width:18%;
-	top:50%;
+	height:50%;
+	top:25%;
 	left:50%;
 	margin-left: -9%;
-	margin-top:-25.26%;
+	/*margin-top:-20.26%;*/
 	color:#fff;
 	/*background-color: purple;*/
 }

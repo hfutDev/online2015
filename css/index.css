@@ -5,34 +5,37 @@
 .m-cloud{
 	position:absolute;
 	overflow: hidden;
-}
-.m-cloud img{
-	position:relative;
 	width:100%;
 	height:100%;
+}
+.m-cloud img{
+	position:absolute;
+	width:100%;
+	height:15%;
 }
 
 /*云动画*/
 @keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 @-webkit-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 
 @-moz-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 
 @-o-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   {left: -100%;opacity: 0.7;}
+	100% { left:100%;opacity: 1;}
 }
 .m-cloud-left{
-	left:-1160px;	
+	top:0px;
+	left:-100%;	
 	animation: cloudleft 60s linear 0s normal infinite;
 	-webkit-animation: cloudleft 60s linear 0s normal infinite;
 	-moz-animation: cloudleft 60s linear 0s normal infinite;
@@ -40,26 +43,26 @@
 	-o-animation: cloudleft 60s linear 0s normal infinite;
 }
 @keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 @-webkit-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   { left: 100%;opacity: 1;}
+	100% { left:-100%;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 
 @-o-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 .m-cloud-right{
-	top:-166px;
-	left:-1200px;
+	top:0px;
+	left:-100%;
 	animation: cloudright 80s linear 0s normal infinite;
 	-webkit-animation: cloudright 80s linear 0s normal infinite;
 	-moz-animation: cloudright 80s linear 0s normal infinite;
@@ -68,83 +71,81 @@
 }
 .m-logo{
 	position:absolute;
-	width:275px;
-	height:400px;
+	width:24%;
+	/*height:30%;*/
 	top:50%;
 	left:50%;
-	margin-left: -136px;
-	margin-top:-200px;
+	margin-left: -12%;
+	margin-top:-20%;
 	color:#fff;
 	/*background-color: purple;*/
 }
 .m-logo-left{
-	width:250px;
+	width:88%;
 	text-align: center;
 	display: inline-block;
 }
+.m-logo-pic{
+	width:80%;
+	margin:5% 0;
+}
 .m-logo-text{
-	width:36px;
+	width:20%;
 	margin:0 auto;
 	font-size: 36px;
 }
 .m-logo-right{
 	font-size: 18px;
 	line-height:20px;
-	width:18px;
+	width:10%;
 	display: inline-block;
 }
 .m-clock-study{
 	position: absolute;
-	top:190px;
-	left:-430px;
-	width:140px;
-	height:140px;
+	top:45%;
+	left:-145%;
+	width:45%;
 	color:#8f82bc;
 	cursor: pointer;
 }
 .m-clock-idea{
 	position: absolute;
 	top:0px;
-	left:-290px;
-	width:130px;
-	height:130px;
+	left:-100%;
+	width:50%;
 	color:#13b5b1;
 	cursor: pointer;
 }
 .m-clock-news{
 	position: absolute;
-	top:210px;
-	left:-195px;
-	width:170px;
-	height:170px;
+	top:60%;
+	left:-70%;
+	width:55%;
 	color:#8f82bc;
 	cursor: pointer;
 }
 .m-clock-service{
 	position: absolute;
-	top:30px;
-	left:350px;
-	width:160px;
-	height:160px;
+	top:10%;
+	left:110%;
+	width:60%;
 	color:#13b5b1;
 	cursor: pointer;
 }
 .m-clock-qa{
 	position: absolute;
-	top:210px;
-	left:500px;
-	width:180px;
-	height:180px;
+	top:60%;
+	left:170%;
+	width:60%;
 	color:#8f82bc;
 	cursor: pointer;
 }
 .m-nav-text{
-	width:18px;
-	height: 36px;
-	margin:0px auto;
-	margin-top: calc(-50% - 20px);
-	margin-top: -moz-calc(-50% - 20px);
-	margin-top: -webkit-calc(-50% - 20px);
+	position: absolute;	
+	width:10%;
+	height: 30%;
+	top:37%;
+	left:44%;
 	font-size: 18px;
 	line-height: 18px;
 }
@@ -185,13 +186,13 @@
 }
  /*波浪动画*/
 @keyframes waveback{
-	0%   {bottom:15%; left:-50%;}
-	50%  {bottom:30%; left:-40%;}
-	100% {bottom:15%; left:-28%;}
+	0%   {bottom:10%; left:-50%;}
+	50%  {bottom:20%; left:-40%;}
+	100% {bottom:10%; left:-28%;}
 }
 .m-wave-back{
 	position:absolute;
-	bottom:15%;
+	bottom:10%;
 	left:-50%;
 	width:150%;
 	height:100px;

@@ -21,26 +21,38 @@ $(document).ready(function () {
         }
         $(this).mouseover(function () {
             var i = $(this).find("p").eq(1).attr("class");
-            i = i.charAt(i.length - 1) ;
-            $(this).find(".book-"+i).addClass("book-shelf-hover");
+            i = i.charAt(i.length - 1);
+            $(this).find(".book-" + i).addClass("book-shelf-hover");
             var x = $(".light-" + (i ));
             x.fadeIn();
             $(x).parents("li").siblings("li").find(".light").fadeOut();
-            $(this).siblings("li").find("p").removeClass("book-shelf-hover")
+            $(this).siblings("li").find("p").removeClass("book-shelf-hover");
         });
+
+        //$(this).find(".light").mouseout(function () {
+        //    $(this).fadeOut();
+        //    $(this).siblings("p").removeClass("book-shelf-hover");
+        //
+        //});
     });
-
-
-    $(".img-all").mouseover(function () {
-        var i = $(this).attr("class");
+    $(".img-all").find(".img-universal").mouseover(function () {
+        var i = $(this).parents(".img-all").attr("class");
         i = i.charAt(i.length - 1);
         $(".paint-light-" + i).fadeIn();
         $(".paint-light-" + i).siblings().fadeOut();
-    });
-
-    $(".img-universal").click(function () {
-        $(this).siblings().find('.img-content').fadeToggle(1, function () {//第一个参数为动画持续时间
-            $(this).addClass('animated flipInY');//给当前元素添加摇晃效果类
+        $(this).mouseout(function () {
+            $(".paint-light-" + i).fadeOut();
         });
     });
+
+
+    $(".img-universal").click(function () {
+        $(this).siblings('a').fadeIn(1, function () {//第一个参数为动画持续时间
+            $(this).find(".img-content").addClass('animated flipInY');//给当前元素添加摇晃效果类
+        });
+    });
+    $(".img-universal").siblings("a").find(".img-content").mouseout(function () {
+        $(this).parents("a").hide();
+    });
+
 });

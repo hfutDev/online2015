@@ -2,10 +2,14 @@
  * Created by surongxiang on 15/10/6.
  */
 $(".img-universal").click(function () {
-    $(this).find('.img-content').fadeToggle(1, function () {//第一个参数为动画持续时间
+    $(this).find('a').fadeIn(1, function () {//第一个参数为动画持续时间
         $(this).addClass('animated flipInY');//给当前元素添加摇晃效果类
     });
 });
+$(".img-universal").find(".img-content").mouseout(function () {
+    $(this).parent("a").hide();
+});
+
 var asd = $(".main").width();
 $(".main").css("marginLeft", -asd / 2);
 
@@ -28,15 +32,18 @@ $.ajax({
                 var i = $(this).index();
                 if (data[n] != null) {
                     if (i < data[n].length) {
-                        console.log(i);
                         $(this).find("a").html(data[n][i].title);
                         $(this).find("a").attr("href", data[n][i].fromurl);
                     }
                     else {
-                        $(this).html("暂无安排");
+                        $(this).html("");
                     }
                 } else {
-                    $(this).html("暂无安排");
+                    console.log(i);
+                    $(this).html("");
+                    if($(this).index()==0){
+                        $(this).html("暂无安排");
+                    }
                 }
             });
         }

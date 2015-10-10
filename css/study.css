@@ -50,6 +50,9 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35);
     display: inline-block;
 }
+.img-universal a{
+    display: none;
+}
 .img-1{
     margin-left: 20px;
 }
@@ -166,22 +169,26 @@
     font-size: 14px;
     color: #362e2b;
     top: 0;
-    display: none;
+    display: block;
     text-indent: 2em;
     overflow: hidden;
+    height: 224px;
+    width: 220px;
 }
 .img-content:hover{
     background-color: #362e2b;
     color: #fff;
 }
+.img-content p{
+    margin: 0;
+    height: 194px;
+    width: 190px;
+    padding: 15px;
+}
 .img-con-1{
-    height: 224px;
-    width: 220px;
     left: 46px;
 }
 .img-con-2{
-    height: 224px;
-    width: 220px;
     left: 301px;
 }
 

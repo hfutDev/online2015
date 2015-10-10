@@ -39,11 +39,14 @@
 }
 .ins-2{
     position: absolute;
+    top: 74%;
     left: -80px;
-    top:430px;
 }
 .img-all{
     float: left;
+}
+.img-all a{
+    display: none;
 }
 .img-universal{
     padding: 20px;
@@ -59,12 +62,15 @@
     font-size: 14px;
     color: #362e2b;
     top: 0;
-    display: none;
     text-indent: 2em;
 }
 .img-content:hover{
     background-color: #362e2b;
     color: #fff;
+}
+.img-content p{
+    margin: 0;
+    padding: 15px;
 }
 .img-con-1{
     height: 200px;

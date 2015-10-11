@@ -6,7 +6,7 @@
 /*common login css*/
 body{min-height:600px;min-width:950px;}
 a{cursor:pointer;}
-a, label{color:#564442;}
+a, label, .login-center{color:#564442;}
 .content{overflow-y:hidden;}
 
 .shadow{box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);}

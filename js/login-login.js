@@ -4,7 +4,7 @@
 	var user = {
 		name : '',
 		password : '',
-		remberme : false
+		remember : false
 	}
 	function init(){
 		addLogin();
@@ -17,7 +17,7 @@
 	function login(){
 		user.name = loginForm.username.value;
 		user.password = loginForm.password.value;
-		user.remberme = loginForm.remberme.value;
+		user.remember = loginForm.remember.value;
 		$.ajax({
 			url:'',
 			success:function(){

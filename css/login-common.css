@@ -1,0 +1,16 @@
+/*
+@author yu
+@time 2015.10.3
+@des mly hfut
+*/
+/*common login css*/
+body{min-height:600px;}
+.login-bg{height:100%;margin:auto;text-align: center;}
+.login-bg>img{max-height:100% !important;width:auto !important;height:expression(this.height > 600 ? "600px":this.height) !important;}
+.content{background-color:#f5e0a7;}
+.main{position:relative;overflow:hidden;}
+.login-body{width:100%;height:350px;position:absolute;top:50%;left:0;text-align:center;margin-top:-175px;}
+.login-black{width:3%;height:100%;float:left;background-color:#564442;}
+.login-main{width:94%;float:left;background-repeat:repeat;background-image:url(../images/login/login-bg-patten.jpg);height:330px;margin-top:10px;}
+
+.login-center{height:300px;width:552px;margin:15px auto;background-image:url(../images/login/login-box.png);background-size: contain;background-repeat: no-repeat;}

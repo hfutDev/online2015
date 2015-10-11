@@ -19,58 +19,66 @@
 
 /*云动画*/
 @keyframes cloudleft{
-	0%   { left: -100%;opacity: 0.7;}
-	100% {left:100%;opacity: 1;}
+	0%   { left: -20%;top:0px;opacity: 0.7;}
+	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
+	100% { left: -20%;top:0px;opacity: 0.7;}
 }
 @-webkit-keyframes cloudleft{
-	0%   { left: -100%;opacity: 0.7;}
-	100% {left:100%;opacity: 1;}
+	0%   { left: -20%;top:0px;opacity: 0.7;}
+	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
+	100% { left: -20%;top:0px;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudleft{
-	0%   { left: -100%;opacity: 0.7;}
-	100% {left:100%;opacity: 1;}
+	0%   { left: -20%;top:0px;opacity: 0.7;}
+	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
+	100% { left: -20%;top:0px;opacity: 0.7;}
 }
 
 @-o-keyframes cloudleft{
-	0%   {left: -100%;opacity: 0.7;}
-	100% { left:100%;opacity: 1;}
+	0%   { left: -20%;top:0px;opacity: 0.7;}
+	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
+	100% { left: -20%;top:0px;opacity: 0.7;}
 }
 .m-cloud-left{
-	top:0px;
-	left:-100%;	
-	animation: cloudleft 60s linear 0s normal infinite;
-	-webkit-animation: cloudleft 60s linear 0s normal infinite;
-	-moz-animation: cloudleft 60s linear 0s normal infinite;
-	-ms-animation: cloudleft 60s linear 0s normal infinite;
-	-o-animation: cloudleft 60s linear 0s normal infinite;
+	top:0;
+	left:0;	
+	animation: cloudleft 40s linear 0s normal infinite;
+	-webkit-animation: cloudleft 40s linear 0s normal infinite;
+	-moz-animation: cloudleft 40s linear 0s normal infinite;
+	-ms-animation: cloudleft 40s linear 0s normal infinite;
+	-o-animation: cloudleft 40s linear 0s normal infinite;
 }
 @keyframes cloudright{
-	0%   {left: 100%;opacity: 1;}
-	100% {left:-100%;opacity: 0.7;}
+	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	50%  {right:-12.97%;top:0;opacity: 1;}
+	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
 }
 @-webkit-keyframes cloudright{
-	0%   { left: 100%;opacity: 1;}
-	100% { left:-100%;opacity: 0.7;}
+	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	50%  {right:-12.97%;top:0;opacity: 1;}
+	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudright{
-	0%   {left: 100%;opacity: 1;}
-	100% {left:-100%;opacity: 0.7;}
+	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	50%  {right:-12.97%;top:0;opacity: 1;}
+	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
 }
 
 @-o-keyframes cloudright{
-	0%   {left: 100%;opacity: 1;}
-	100% {left:-100%;opacity: 0.7;}
+	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	50%  {right:-12.97%;top:0;opacity: 1;}
+	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
 }
 .m-cloud-right{
 	top:0px;
-	left:-100%;
-	animation: cloudright 80s linear 0s normal infinite;
-	-webkit-animation: cloudright 80s linear 0s normal infinite;
-	-moz-animation: cloudright 80s linear 0s normal infinite;
-	-ms-animation: cloudright 80s linear 0s normal infinite;
-	-o-animation: cloudright 80s linear 0s normal infinite;
+	right:0;
+	animation: cloudright 40s linear 0s normal infinite;
+	-webkit-animation: cloudright 40s linear 0s normal infinite;
+	-moz-animation: cloudright 40s linear 0s normal infinite;
+	-ms-animation: cloudright 40s linear 0s normal infinite;
+	-o-animation: cloudright 40s linear 0s normal infinite;
 }
 .m-logo{
 	position:absolute;

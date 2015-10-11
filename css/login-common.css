@@ -6,6 +6,7 @@
 /*common login css*/
 body{min-height:600px;}
 a{cursor:pointer;}
+a, label{color:#564442;}
 .login-bg{height:100%;margin:auto;text-align: center;}
 .login-bg>img{max-height:100% !important;width:auto !important;height:expression(this.height > 600 ? "600px":this.height) !important;}
 .content{background-color:#f5e0a7;}
@@ -23,12 +24,12 @@ a{cursor:pointer;}
 
 .login-form label{padding-bottom:17px;display:inline-block;font-size:15px;}
 .login-form label span, .login-form label input{display:inline-block;float:left;}
-.login-form label span{width:45px;margin-right:42px;margin-top:1px;}
-.login-form label input{width:136px;display:inline-block;border:1px solid #f5e0a7;padding-left:2px;height: 17px;}
+.login-form label span{width:45px;margin-right:40px;margin-top:1px;}
+.login-form label input{width:136px;display:inline-block;border:2px solid #f5e0a7;padding-left:2px;height: 17px;background-color:transparent;}
 .login-save{display:block;}
 .login-save label{display:block;float:left;padding-bottom:0;margin:0 28px;}
 .login-save label input[type="checkbox"]{width:auto;margin-right:2px;display:inline-block;margin-top:2px;border-color:red;}
-.login-save a{font-size:15px;color:#564442;text-decoration:underline;}
+.login-save a{font-size:15px;text-decoration:underline;}
 .login-save a:hover, .btn-group a:hover{color:#A79053;}
 .btn-group{margin-top:22px;width:100%;height:30px;}
 .btn-group a{display:inline-block;width:62px;height:26px;font-size: 14px;border:2px solid #f5e0a7;line-height:26px;}

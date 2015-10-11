@@ -7,7 +7,7 @@
 
 
 .login-save{display:block;}
-.login-save label{display:block;float:left;padding-bottom:0;margin:0 28px;}
+.login-save label{display:block;float:left;padding-bottom:0;margin:0 28px;width: auto;}
 .login-save label input[type="checkbox"]{width:auto;margin-right:2px;display:inline-block;margin-top:2px;border-color:red;}
 .login-save a{font-size:15px;text-decoration:underline;}
 

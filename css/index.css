@@ -1,38 +1,44 @@
 .m-content{
 	position:absolute;
-	background: url(../images/index/bg.jpg) 100%  100%;
+	background-image: url(../images/index/bg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	overflow: hidden;
 }
 .m-cloud{
 	position:absolute;
 	overflow: hidden;
-}
-.m-cloud img{
-	position:relative;
 	width:100%;
 	height:100%;
+}
+.m-cloud img{
+	position:absolute;
+	width:100%;
+	height:15%;
 }
 
 /*云动画*/
 @keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 @-webkit-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 
 @-moz-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   { left: -100%;opacity: 0.7;}
+	100% {left:100%;opacity: 1;}
 }
 
 @-o-keyframes cloudleft{
-	0%   {top:0px; left: -1160px;opacity: 0.7;}
-	100% {top:0px; left:1300px;opacity: 1;}
+	0%   {left: -100%;opacity: 0.7;}
+	100% { left:100%;opacity: 1;}
 }
 .m-cloud-left{
-	left:-1160px;	
+	top:0px;
+	left:-100%;	
 	animation: cloudleft 60s linear 0s normal infinite;
 	-webkit-animation: cloudleft 60s linear 0s normal infinite;
 	-moz-animation: cloudleft 60s linear 0s normal infinite;
@@ -40,26 +46,26 @@
 	-o-animation: cloudleft 60s linear 0s normal infinite;
 }
 @keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 @-webkit-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   { left: 100%;opacity: 1;}
+	100% { left:-100%;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 
 @-o-keyframes cloudright{
-	0%   {top:-166px; left: 1300px;opacity: 1;}
-	100% {top:-166px; left:-1200px;opacity: 0.7;}
+	0%   {left: 100%;opacity: 1;}
+	100% {left:-100%;opacity: 0.7;}
 }
 .m-cloud-right{
-	top:-166px;
-	left:-1200px;
+	top:0px;
+	left:-100%;
 	animation: cloudright 80s linear 0s normal infinite;
 	-webkit-animation: cloudright 80s linear 0s normal infinite;
 	-moz-animation: cloudright 80s linear 0s normal infinite;
@@ -68,85 +74,99 @@
 }
 .m-logo{
 	position:absolute;
-	width:275px;
-	height:400px;
-	top:50%;
+	width:18%;
+	height:50%;
+	top:25%;
 	left:50%;
-	margin-left: -136px;
-	margin-top:-200px;
+	margin-left: -9%;
+	/*margin-top:-20.26%;*/
 	color:#fff;
 	/*background-color: purple;*/
 }
 .m-logo-left{
-	width:250px;
+	width:88%;
 	text-align: center;
 	display: inline-block;
 }
+.m-logo-pic{
+	width:80%;
+	margin:11.63% 0;
+}
 .m-logo-text{
-	width:36px;
+	width:20%;
 	margin:0 auto;
 	font-size: 36px;
+	line-height: 36px;
 }
 .m-logo-right{
+	width:9%;
 	font-size: 18px;
 	line-height:20px;
-	width:18px;
 	display: inline-block;
 }
 .m-clock-study{
 	position: absolute;
-	top:190px;
-	left:-430px;
-	width:140px;
-	height:140px;
+	top:47.37%;
+	left:6.85%;
+	width:8.33%;
 	color:#8f82bc;
 	cursor: pointer;
+}
+.m-study-text{
+	top:31.14%;
 }
 .m-clock-idea{
 	position: absolute;
-	top:0px;
-	left:-290px;
-	width:130px;
-	height:130px;
+	top:25.26%;
+	left:18.45%;
+	width:7.74%;
 	color:#13b5b1;
 	cursor: pointer;
+}
+.m-idea-text{
+	top:28.92%;
 }
 .m-clock-news{
 	position: absolute;
-	top:210px;
-	left:-195px;
-	width:170px;
-	height:170px;
+	top:52.11%;
+	left:27.38%;
+	width:10.12%;
 	color:#8f82bc;
 	cursor: pointer;
+}
+.m-news-text{
+	top:34%;
 }
 .m-clock-service{
 	position: absolute;
-	top:30px;
-	left:350px;
-	width:160px;
-	height:160px;
+	top:33.16%;
+	left:66.96%;
+	width:9.52%;
 	color:#13b5b1;
 	cursor: pointer;
 }
+.m-service-text{
+	top:32.38%;
+}
 .m-clock-qa{
 	position: absolute;
-	top:210px;
-	left:500px;
-	width:180px;
-	height:180px;
+	top:53.15%;
+	left:80.65%;
+	width:10.71%;
 	color:#8f82bc;
 	cursor: pointer;
 }
+.m-qa-text{
+	top:35%;
+}
 .m-nav-text{
-	width:18px;
-	height: 36px;
-	margin:0px auto;
-	margin-top: calc(-50% - 20px);
-	margin-top: -moz-calc(-50% - 20px);
-	margin-top: -webkit-calc(-50% - 20px);
+	position: absolute;	
+	width:100%;
 	font-size: 18px;
 	line-height: 18px;
+	text-align: center;
+	/*display:table-cell;*/
+	/*top:calc(5.3% - 18px);*/
 }
   /*旋转动画*/
 @keyframes rotate{
@@ -170,6 +190,7 @@
 	100% {-o-transform:rotate(360deg)}
 }
 .m-clock-pic{
+	/*font-size:99px;*/
 	animation: rotate 10s linear 0s normal infinite;
 	-webkit-animation: rotate 10s linear 0s normal infinite;
 	-moz-animation: rotate 10s linear 0s normal infinite;
@@ -185,17 +206,17 @@
 }
  /*波浪动画*/
 @keyframes waveback{
-	0%   {bottom:15%; left:-50%;}
-	50%  {bottom:30%; left:-40%;}
-	100% {bottom:15%; left:-28%;}
+	0%   {bottom:10%; left:-50%;}
+	50%  {bottom:20%; left:-40%;}
+	100% {bottom:10%; left:-28%;}
 }
 .m-wave-back{
 	position:absolute;
-	bottom:15%;
+	bottom:10%;
 	left:-50%;
 	width:150%;
 	height:100px;
-	background:url(../images/index/wave-back.svg) 100% 100%;
+	background:url(../images/index/wave-back.svg) 100% 100% repeat;
 	animation: waveback 5s linear 0s normal infinite;
 	-webkit-animation: waveback 5s linear 0s normal infinite;
 	-moz-animation: waveback 5s linear 0s normal infinite;

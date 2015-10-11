@@ -12,12 +12,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">   
-  <title>登陆</title>
+  <title>找回密码-输入邮箱</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/login-common.css">
-  <link rel="stylesheet" href="./css/login-login.css">
+  <link rel="stylesheet" href="./css/login-findps.css">
   <script src="./js/respond.min.js"></script>
   <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -63,27 +63,25 @@
               <div class="login-content">
                 <div class="login-head">
                   <img src="./images/login/icon-title-left.png"/>
-                  <span>登陆</span>
+                  <span>找回密码</span>
                   <img src="./images/login/icon-title-right.png" />
                 </div>
-                <form name="loginForm" class="login-form">
-                  <label>
-                    <span>用户名</span>
-                    <input name="username" type="text" />
-                  </label>
-                  <label>
-                    <span>密&nbsp;&nbsp;&nbsp;码</span>
-                    <input name="password" type="password" />
-                  </label>
-                  <div class="login-save">
-                    <label>
-                      <input name="remember" type="checkbox" />记住我
-                    </label>
-                    <a href="">忘记密码？</a>
+                <form name="form1" class="login-form">
+                  <div class="find-msg">
+                    <span>确认账号</span>
+                    <img src="./images/login/icon-arrow-right.png" />
+                    <span class="find-title">安全验证</span>
+                    <img src="./images/login/icon-arrow-right.png" />
+                    <span class="find-title">重置密码</span>
                   </div>
+                  <div class="find-prompt">请填写需要找回的账号的邮箱：</div>
+                  <label>
+                    <span>邮&nbsp;&nbsp;&nbsp;箱</span>
+                    <input name="email" type="text" />        
+                  </label>                 
+                  
                   <div class="btn-group">
-                    <a class="btn-register">注册</a>
-                    <a class="btn-login">登陆</a>
+                    <a class="btn-findps-email">下一步</a>
                   </div>
                 </form>
               </div>
@@ -99,5 +97,5 @@
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/login-common.js"></script>
-
+<script src="./js/login-register.js"></script>
 </html>

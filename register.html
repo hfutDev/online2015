@@ -12,12 +12,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">   
-  <title>登陆</title>
+  <title>注册</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/login-common.css">
-  <link rel="stylesheet" href="./css/login-login.css">
+  <link rel="stylesheet" href="./css/login-register.css">
   <script src="./js/respond.min.js"></script>
   <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -63,27 +63,31 @@
               <div class="login-content">
                 <div class="login-head">
                   <img src="./images/login/icon-title-left.png"/>
-                  <span>登陆</span>
+                  <span>注册</span>
                   <img src="./images/login/icon-title-right.png" />
                 </div>
-                <form name="loginForm" class="login-form">
+                <form name="form1" class="login-form">
                   <label>
-                    <span>用户名</span>
+                    <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
+                    <input name="email" type="text" />
+                    <!-- <div class="error error-hide error-show">请输入正确的邮箱地址.</div> -->
+                  </label>
+                  <label>
+                    <span>用&nbsp;户&nbsp;名</span>
                     <input name="username" type="text" />
                   </label>
                   <label>
-                    <span>密&nbsp;&nbsp;&nbsp;码</span>
+                    <span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
                     <input name="password" type="password" />
                   </label>
-                  <div class="login-save">
-                    <label>
-                      <input name="remember" type="checkbox" />记住我
-                    </label>
-                    <a href="">忘记密码？</a>
-                  </div>
+                  <label>
+                    <span>重复密码</span>
+                    <input name="confirmPassword" type="password" />
+                  </label>
+                  
                   <div class="btn-group">
-                    <a class="btn-register">注册</a>
-                    <a class="btn-login">登陆</a>
+                    <a class="btn-register" href="login.html">放弃</a>
+                    <a class="btn-login register">注册</a>
                   </div>
                 </form>
               </div>
@@ -99,5 +103,5 @@
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/login-common.js"></script>
-
+<script src="./js/login-register.js"></script>
 </html>

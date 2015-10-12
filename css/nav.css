@@ -3,25 +3,149 @@
 @time 2015.10.3
 @des mly hfut
 */
+/*
+@changed by susan
+@time 2015.10.11
+@des mly hfut
+*/
 /*common css*/
 html, body{width:100%;height:100%;/*min-height:700px;min-width:1200px;*/}
 body{font-family: 'Microsoft YaHei', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 ul,li{list-style:none;}
 a{text-decoration:none;}
 /*page*/
-.nav{width:12.5%;height:100%;background-image:url(../images/nav/nav_bg.png);background-size:cover;color:#bbb;float:left;position:relative;}
-.content{width:87.5%;height:100%;/*float:left;*/background-color:#eae4d4;margin-left: 12.5%;overflow: auto;}
-.main{margin:0 10%;width:80%;height:100%;}
+.nav{
+	width:12.5%;
+	height:100%;
+	background-image:url(../images/nav/nav_bg.png);
+	background-size:cover;
+	color:#bbb;float:left;
+	position:relative;
+	text-align: center;
+}
+.content{
+	width:87.5%;
+	height:100%;
+	/*float:left;*/
+	background-color:#eae4d4;
+	margin-left: 12.5%;
+	overflow: auto;
+}
+/*.main{
+	margin:0 10%;
+	width:80%;
+	height:100%;
+}*/
 /*nav*/
-.logo{width:48px;margin:0 auto;margin-top:24px;display:block;}
-.logo img{width:48px;height:48px;}
-.logo span{font-size:12px;color:#ddd;}
-.nav ul{padding-left:0;margin-top:26px;}
-.nav ul li{width:70px;height:30px;font-size:14px;text-align:center;margin:0 auto;margin-bottom:20px;}
-.nav ul li a{display:block;width:inherit;height:inherit;color:#bbb;}
-.nav ul li a:hover{color:#ffe048;background-image:url(../images/nav/nav_hover.png);}
-.nav-other{width: 100%;position:absolute;bottom:20px;left:0;}
-.nav-other-one{width:56px;margin:0 auto;text-align:center;height:64px;margin-bottom:20px;display:block;}
-.nav-other-one img{width:38px;height:38px;margin:0 auto;margin-bottom:3px;}
-.nav-other-one span{font-size:12px;color:#666;margin-left:4px;}
+.nav-logo{
+	display:table;
+	width:100%;
+	height:11.58%;
+}
+.logo{
+/*	margin:0 auto;
+	margin-top:20.86%;
+	height:10.5%;*/
+	display:table-cell;
+	vertical-align:bottom;
+}
+/*.logo img{
+	width:48px;
+	height:48px;
+}*/
+.logo span{
+	font-family: 'icomoon';
+	font-size:3.75em;
+	color:#ffe048;
+}
+.nav ul{
+	padding-left:0;
+	margin-top:25%;
+	margin-bottom: 0%;
+	width:100%;
+	height:38.42%;
+}
+.nav ul li{
+	font-size:1.125em;
+	font-weight: 200;
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:10.96%;
+	width:100%;
+	height:9.04%;
+}
+.nav ul li a{
+	margin: 0 auto;
+	display:block;
+	width:inherit;
+	height:inherit;
+	color:rgba(255,255,255,0.85);
+	line-height: 1.125em;
+	letter-spacing: 0.1em;
+	height: 90.91%;
+	width: 100%;
+}
+.nav ul li span{
+	margin: 0 auto;
+	display:block;
+	height: 9.09%;
+	width: 31%;	
+	background-color: rgba(255,224,72,0.3);
+}
+.nav ul li span span{
+	margin: 0 auto;
+	display:block;
+	height: 100%;
+	width: 43.75%;	
+	background-color: #ffe048;
+}
+.nav ul li a:hover{
+	color: #fff;
+}
+.nav-other{
+	width: 100%;
+	height: 19.37%;
+	position:absolute;
+	bottom:2.62%;
+	left:0;
+}
+.nav-other-one{
+	color:rgba(255,255,255,0.75);
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	height:43.75%;
+	margin-bottom:6.25%;
+	display:block;
+}
+.nav-other-one:hover{
+	color: #fff;
+}
 
+/*.nav-other-one img{
+	width:38px;
+	height:38px;
+	margin:0 auto;
+	margin-bottom:3px;
+}*/
+.nav-other-one span{
+	display: block;
+	font-size:0.75em;
+	margin-left:0px;
+	margin-bottom: 4.17%
+}
+.transition{
+	transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+}
+#other-icon{
+	font-family: 'icomoon';
+	font-size: 2.8125em;
+}
+#active{
+	font-weight: 700;
+	color:#ffe048;
+}

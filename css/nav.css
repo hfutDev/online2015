@@ -31,11 +31,11 @@ a{text-decoration:none;}
 	margin-left: 12.5%;
 	overflow: auto;
 }
-/*.main{
+.main{
 	margin:0 10%;
 	width:80%;
 	height:100%;
-}*/
+}
 /*nav*/
 .nav-logo{
 	display:table;

@@ -4,6 +4,7 @@
 @des mly hfut
 */
 /*mian content css*/
+.main{margin:0 10%;width:80%;height:100%;font-size: 15px;}
 .shadow{box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);}
 
 .main-logo{width:54px;height:100%;float:left;margin-right:24px;}

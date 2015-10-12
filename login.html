@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/login-common.css">
   <link rel="stylesheet" href="./css/login-login.css">
+  <link rel="stylesheet" href="./css/font.css">
   <script src="./js/respond.min.js"></script>
   <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -25,25 +26,32 @@
 </head>
 <body>
   <div class="nav">
-    <a class="logo" href="#">
-      <img src="./images/nav/logo.png">
-      <span>工大学子</span>
-    </a>
+    <div class="nav-logo">
+      <a class="logo" href="#">
+        <!-- <img src="./images/nav/logo.png"> -->
+        <span class="icon-icon-logo" class="transition"></span>
+      </a>
+    </div>
     <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="idea.html">思想·观点</a></li>
-      <li><a href="study.html">学习·成长</a></li>
-      <li><a href="service.html">生活·服务</a></li>
-      <li><a href="">互动·博客</a></li>
-      <li><a href="info.html">新闻·资讯</a></li>
+      <li>
+        <a href="index.html" id="active">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+        <span><span></span></span>
+      </li>
+      <li><a href="idea.html">思想观点</a></li>
+      <li><a href="study.html">学习成长</a></li>
+      <li><a href="service.html">生活服务</a></li>
+      <li><a href="">互动博客</a></li>
+      <li><a href="info.html">新闻资讯</a></li>
     </ul>
     <div class="nav-other">
       <a class="nav-other-one" href="special.html">
-        <img src="./images/nav/sites.png" />
+        <!-- <img src="./images/nav/sites.png" /> -->
+        <span class="icon-icon-nav" id="other-icon"></span>
         <span>常用网址</span>
       </a>
-      <a class="nav-other-one" href="login.html">
-        <img src="./images/nav/user-login.png"/>
+      <a class="nav-other-one" href="#">
+       <!--  <img src="./images/nav/user-login.png"/> -->
+        <span class="icon-icon-user" id="other-icon"></span>
         <span>用户登录</span>
       </a>
     </div>

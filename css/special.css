@@ -3,6 +3,7 @@
 *@time 2015.10.5
 *@desc css for sites ,special page
 */
+.main{margin:0 10%;width:80%;height:100%;font-size: 15px;}
 .shadow{box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);}
 .content{background-color:#5f236e;}
 .main-top{margin-top:40px;}
@@ -16,7 +17,7 @@
 .sites-desc{text-align:center;height:100%;width:80px;float:left;margin-top:102px;margin-left:18%;}
 .sites-desc span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;width:20px;font-size:13px;}
 /*one site*/
-.site-one{width:86%;float:left;max-width:250px;_width:250px;}
+.site-one{width:86%;float:right;max-width:250px;_width:250px;}
 
 .site-black{width:100%;height:21px;float:left;position:relative;background-color:#000;}
 .site-black img{position: absolute;left:50%;top:-7px;width:20px;height:14px;margin-left:-10px;}
@@ -26,7 +27,7 @@
 .site-link{height:23px;float:right;line-height:21px;margin-right:10px;}
 .site-link img{width:16px;height:12px;float:left;display:inline-block;margin-top:6px;margin-right: 2px;}
 .site-link span{font-size:12px;text-align:center;color:#DBB37D;display:inline-block;letter-spacing:1.2px;}
-.get-site-more{float:left;}
+.get-site-more{float:right;}
 .site-more-link{float:left;width:90%;margin:0 5%;background-color:#fff;font-size:12px;height:22px;line-height:22px;cursor:pointer;}
 .site-more-link span{display: inline-block;float:right;margin-right:10px;letter-spacing:1.2px;}
 .fix-silk{position:relative;height: 140px;}

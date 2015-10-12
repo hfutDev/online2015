@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">   
-  <title>找回密码-输入邮箱</title>
+  <title>找回密码-安全验证</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/nav.css">
@@ -66,19 +66,23 @@
                   <span>找回密码</span>
                   <img src="./images/login/icon-title-right.png" />
                 </div>
-                <form name="findForm" class="login-form">
+                <form name="safetyForm" class="login-form safety">
                   <div class="find-msg">
-                    <span>确认账号</span>
+                    <span class="find-title">确认账号</span>
                     <img src="./images/login/icon-arrow-right.png" />
-                    <span class="find-title">安全验证</span>
+                    <span >安全验证</span>
                     <img src="./images/login/icon-arrow-right.png" />
                     <span class="find-title">重置密码</span>
                   </div>
-                  <div class="find-prompt">请填写需要找回的账号的邮箱：</div>
+
                   <label>
-                    <span>邮&nbsp;&nbsp;&nbsp;箱</span>
-                    <input name="email" type="text" />        
-                  </label>                 
+                    <span>你正在找回的账户：</span>
+                    <span class="safe safe-name">Hello World</span>      
+                  </label>
+                  <label>
+                    <span>你使用的保密邮箱：</span>
+                    <span class="safe safe-email">1090564506@qq.com</span>      
+                  </label>   
                   
                   <div class="btn-group">
                     <a class="btn-findps-email">下一步</a>
@@ -97,5 +101,5 @@
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/login-common.js"></script>
-<script src="./js/login-register.js"></script>
+<script src="./js/login-findps2.js"></script>
 </html>

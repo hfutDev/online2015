@@ -5,6 +5,7 @@
 */
 /*login find password css*/
 
+/*input email page*/
 .login-head span{letter-spacing:4px;margin-left:4px;}
 .find-msg{font-size:14px;margin-bottom:36px;}
 .find-msg img{width:16px;height:10px;margin:0 2px;}
@@ -13,3 +14,17 @@
 .find-prompt{font-size:13px;text-align:left;margin-bottom:16px;}
 .btn-group{margin-top:4px;}
 .btn-find-next{}
+
+/*input safety page*/
+.safety label{font-size:13px;width:140%;}
+.safety label span{width:118px;margin-right:8px;}
+.safety label span.safe{width:auto;margin-right:0;}
+
+/*input new password*/
+.newps .find-msg{margin-bottom:24px;}
+.newps label{padding-bottom:7px;}
+label.newps-name{font-size:13px;}
+label.newps-name span{width:118px;margin-right:8px;}
+label.newps-name span.safe{width:auto;margin-right:0;}
+label.newps-ps span{width:60px;margin-right:25px;}
+

@@ -19,66 +19,68 @@
 
 /*云动画*/
 @keyframes cloudleft{
-	0%   { left: -20%;top:0px;opacity: 0.7;}
-	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
-	100% { left: -20%;top:0px;opacity: 0.7;}
+	0%   {left:-20%;top:-1%;opacity: 0.7;}
+	40%  {left: -8%;top: 0;opacity: 1;}
+	100% {left:-20%;top:-1%;opacity: 0.7;}
 }
 @-webkit-keyframes cloudleft{
-	0%   { left: -20%;top:0px;opacity: 0.7;}
-	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
-	100% { left: -20%;top:0px;opacity: 0.7;}
+	0%   {left:-20%;top:-1%;opacity: 0.7;}
+	40%  {left: -8%;top: 0;opacity: 1;}
+	100% {left:-20%;top:-1%;opacity: 0.7;}
 }
 
 @-moz-keyframes cloudleft{
-	0%   { left: -20%;top:0px;opacity: 0.7;}
-	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
-	100% { left: -20%;top:0px;opacity: 0.7;}
+	0%   {left:-20%;top:-1%;opacity: 0.7;}
+	40%  {left: -8%;top: 0;opacity: 1;}
+	100% {left:-20%;top:-1%;opacity: 0.7;}
 }
 
 @-o-keyframes cloudleft{
-	0%   { left: -20%;top:0px;opacity: 0.7;}
-	50%  {left:-12.97%;top:-1.21%;opacity: 1;}
-	100% { left: -20%;top:0px;opacity: 0.7;}
+	0%   {left:-20%;top:-1%;opacity: 0.7;}
+	40%  {left: -8%;top: 0;opacity: 1;}
+	100% {left:-20%;top:-1%;opacity: 0.7;}
 }
 .m-cloud-left{
-	top:0;
-	left:0;	
-	animation: cloudleft 40s linear 0s normal infinite;
-	-webkit-animation: cloudleft 40s linear 0s normal infinite;
-	-moz-animation: cloudleft 40s linear 0s normal infinite;
-	-ms-animation: cloudleft 40s linear 0s normal infinite;
-	-o-animation: cloudleft 40s linear 0s normal infinite;
+	top:0px;
+	left:-10%;	
+	z-index: 1;
+	animation: cloudleft 60s ease 0s normal infinite;
+	-webkit-animation: cloudleft 60s ease 0s normal infinite;
+	-moz-animation: cloudleft 60s ease 0s normal infinite;
+	-ms-animation: cloudleft 60s ease 0s normal infinite;
+	-o-animation: cloudleft 60s ease 0s normal infinite;
 }
 @keyframes cloudright{
-	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
-	50%  {right:-12.97%;top:0;opacity: 1;}
-	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	0%   {left:60%;top:0px;opacity: 1;}
+	50%  {left:10%;top:-2%;opacity: 0.7;}
+	100% {left:60%;top:0px;opacity: 1;}
 }
 @-webkit-keyframes cloudright{
-	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
-	50%  {right:-12.97%;top:0;opacity: 1;}
-	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	0%   {left:60%;top:0px;opacity: 1;}
+	50%  {left:10%;top:-2%;opacity: 0.7;}
+	100% {left:60%;top:0px;opacity: 1;}
 }
 
 @-moz-keyframes cloudright{
-	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
-	50%  {right:-12.97%;top:0;opacity: 1;}
-	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	0%   {left:60%;top:0px;opacity: 1;}
+	50%  {left:10%;top:-2%;opacity: 0.7;}
+	100% {left:60%;top:0px;opacity: 1;}
 }
 
 @-o-keyframes cloudright{
-	0%   { right:-24.21%;top:-1.21%;opacity: 0.7;}
-	50%  {right:-12.97%;top:0;opacity: 1;}
-	100% { right:-24.21%;top:-1.21%;opacity: 0.7;}
+	0%   {left:60%;top:0px;opacity: 1;}
+	50%  {left:10%;top:-2%;opacity: 0.7;}
+	100% {left:60%;top:0px;opacity: 1;}
 }
 .m-cloud-right{
-	top:0px;
-	right:0;
-	animation: cloudright 40s linear 0s normal infinite;
-	-webkit-animation: cloudright 40s linear 0s normal infinite;
-	-moz-animation: cloudright 40s linear 0s normal infinite;
-	-ms-animation: cloudright 40s linear 0s normal infinite;
-	-o-animation: cloudright 40s linear 0s normal infinite;
+	top:-2%;
+	left:10%;
+	z-index: 0;
+	animation: cloudright 80s ease 0s normal infinite;
+	-webkit-animation: cloudright 80s ease 0s normal infinite;
+	-moz-animation: cloudright 80s ease 0s normal infinite;
+	-ms-animation: cloudright 80s ease 0s normal infinite;
+	-o-animation: cloudright 80s ease 0s normal infinite;
 }
 .m-logo{
 	position:absolute;
@@ -92,86 +94,122 @@
 	/*background-color: purple;*/
 }
 .m-logo-left{
-	width:88%;
+	height: 100%;
 	text-align: center;
 	display: inline-block;
 }
 .m-logo-pic{
-	width:80%;
-	margin:11.63% 0;
+	font-family: 'icomoon';
+	font-size:13.8em;
+	color: #004986;
+	height:43.06%;
+	margin-top:11.63% ;
+	margin-bottom:11.63%;
+	display: block;
 }
 .m-logo-text{
 	width:20%;
+	height:20.23%;
 	margin:0 auto;
-	font-size: 36px;
-	line-height: 36px;
+	font-size: 3em;
+	line-height: 1.1em;
 }
 .m-logo-right{
 	width:9%;
-	font-size: 18px;
-	line-height:20px;
+	font-size: 0.5em;
+	line-height:1.2em;
 	display: inline-block;
+	position: absolute;
+	bottom: 7%;
+	left:92.6%;
 }
 .m-clock-study{
 	position: absolute;
 	top:47.37%;
 	left:6.85%;
-	width:8.33%;
+/*	width:8.33%;*/
 	color:#8f82bc;
 	cursor: pointer;
 }
+.m-clock-study span{
+	font-size: 9.65em;
+	font-family: 'icomoon';
+}
 .m-study-text{
-	top:31.14%;
+	top:37.14%;
+	left:43.6%;
 }
 .m-clock-idea{
 	position: absolute;
 	top:25.26%;
 	left:18.45%;
-	width:7.74%;
+/*	width:7.74%;*/
 	color:#13b5b1;
 	cursor: pointer;
 }
+.m-clock-idea span{
+	font-size: 9em;
+	font-family: 'icomoon';
+}
 .m-idea-text{
-	top:28.92%;
+	top:34.92%;
+	left:43%;
 }
 .m-clock-news{
 	position: absolute;
 	top:52.11%;
 	left:27.38%;
-	width:10.12%;
+/*	width:10.12%;*/
 	color:#8f82bc;
 	cursor: pointer;
 }
-.m-news-text{
-	top:34%;
+.m-clock-news span{
+	font-size: 11.7em;
+	font-family: 'icomoon';
 }
-.m-clock-service{
+.m-news-text{
+	top:39%;
+	left:45.3%;
+}
+.m-clock-service{	
 	position: absolute;
 	top:33.16%;
 	left:66.96%;
-	width:9.52%;
+/*	width:9.52%;*/
 	color:#13b5b1;
 	cursor: pointer;
 }
+.m-clock-service span{
+	font-size: 11.03em;
+	font-family: 'icomoon';
+}
 .m-service-text{
-	top:32.38%;
+	top:38.2%;
+	left:45.5%;
 }
 .m-clock-qa{
 	position: absolute;
 	top:53.15%;
 	left:80.65%;
-	width:10.71%;
+/*	width:10.71%;*/
 	color:#8f82bc;
 	cursor: pointer;
 }
+.m-clock-qa span{
+	font-size: 12.42em;
+	font-family: 'icomoon';
+}
 .m-qa-text{
-	top:35%;
+	top:40%;
+	left:45.5%;
 }
 .m-nav-text{
-	position: absolute;	
-	width:100%;
-	font-size: 18px;
-	line-height: 18px;
+	font-family: 'Microsoft Yahei';
+	position: absolute;
+	text-align: center;	
+	/*width:100%;*/
+	font-size: 1.125em;
+	line-height: 1.125em;
 	text-align: center;
 	/*display:table-cell;*/
 	/*top:calc(5.3% - 18px);*/
@@ -199,73 +237,89 @@
 }
 .m-clock-pic{
 	/*font-size:99px;*/
-	animation: rotate 10s linear 0s normal infinite;
-	-webkit-animation: rotate 10s linear 0s normal infinite;
-	-moz-animation: rotate 10s linear 0s normal infinite;
-	-ms-animation: rotate 10s linear 0s normal infinite;
-	-o-animation: rotate 10s linear 0s normal infinite;
+	animation: rotate 20s linear 0s normal infinite;
+	-webkit-animation: rotate 20s linear 0s normal infinite;
+	-moz-animation: rotate 20s linear 0s normal infinite;
+	-ms-animation: rotate 20s linear 0s normal infinite;
+	-o-animation: rotate 20s linear 0s normal infinite;
 }
 .m-wave{
 	position:absolute;
 	bottom:0;
 	width:100%;
-	height:160px;
+	height:21.05%;
 	overflow: hidden;
 }
  /*波浪动画*/
 @keyframes waveback{
-	0%   {bottom:10%; left:-50%;}
-	50%  {bottom:20%; left:-40%;}
-	100% {bottom:10%; left:-28%;}
+	0%   {bottom:0%; left:-12.45rem;}
+	50%  {bottom:-3%; left:-6.23rem;}
+	100% {bottom:0%; left:0rem;}
 }
 .m-wave-back{
 	position:absolute;
 	bottom:10%;
-	left:-50%;
+	left:0%;
 	width:150%;
-	height:100px;
-	background:url(../images/index/wave-back.svg) 100% 100% repeat;
-	animation: waveback 5s linear 0s normal infinite;
-	-webkit-animation: waveback 5s linear 0s normal infinite;
-	-moz-animation: waveback 5s linear 0s normal infinite;
-	-ms-animation: waveback 5s linear 0s normal infinite;
-	-o-animation: waveback 5s linear 0s normal infinite;
+	height:100%;
+	z-index: 0;
+/*	background:url(../images/index/wave-back.png) 100% 100% repeat-x;*/
+	animation: waveback 8s linear 0s normal infinite;
+	-webkit-animation: waveback 8s linear 0s normal infinite;
+	-moz-animation: waveback 8s linear 0s normal infinite;
+	-ms-animation: waveback 8s linear 0s normal infinite;
+	-o-animation: waveback 8s linear 0s normal infinite;
 }
 @keyframes wavemiddle{
-	0%   {bottom:-10%; left:-50%;}
-	50%  {bottom:10%; left:-35%;}
-	100% {bottom:-10%; left:-20%;}
+	0%   {bottom:-10%; left:-18.68rem;}
+	50%  {bottom:-8.5%; left:-12.45rem;}
+	100% {bottom:-10%; left:-6.23rem;}
 }
 .m-wave-middle{
 	position:absolute;
-	bottom:-10%;
+	bottom:-8.5%;
 	width:150%;
-	height:100px;
-	background:url(../images/index/wave-middle.svg) 100% 100%;
-	animation: wavemiddle 2s linear 0s normal infinite;
-	-webkit-animation: wavemiddle 2s linear 0s normal infinite;
-	-moz-animation: wavemiddle 2s linear 0s normal infinite;
-	-ms-animation: wavemiddle 2s linear 0s normal infinite;
-	-o-animation: wavemiddle 2s linear 0s normal infinite;
+	height:100%;
+	z-index: 2;
+	/*background:url(../images/index/wave-middle.png) 100% 100% repeat-x;*/
+	animation: wavemiddle 6s linear 0s normal infinite;
+	-webkit-animation: wavemiddle 6s linear 0s normal infinite;
+	-moz-animation: wavemiddle 6s linear 0s normal infinite;
+	-ms-animation: wavemiddle 6s linear 0s normal infinite;
+	-o-animation: wavemiddle 6s linear 0s normal infinite;
 }
 @keyframes wavefront{
-	0%   {bottom:-35%; left:-50%;}
-	50%  {bottom:-20%; left:-25%;}
-	100% {bottom:-35%; left:0%;}
+	0%   {bottom:-28%; left:-24.9rem;}
+	50%  {bottom:-22%; left:-12.45rem;}
+	100% {bottom:-28%; left:0rem;}
 }
 .m-wave-front{
 	position:absolute;
-	bottom:-35%;
+	bottom:-25%;
 	width:150%;
-	height:100px;
-	background:url(../images/index/wave-front.svg) 100% 100%;
-	animation: wavefront 2s linear 0s normal infinite;
-	-webkit-animation: wavefront 2s linear 0s normal infinite;
-	-moz-animation: wavefront 2s linear 0s normal infinite;
-	-ms-animation: wavefront 2s linear 0s normal infinite;
-	-o-animation: wavefront 2s linear 0s normal infinite;
+	height:100%;
+	z-index: 3;
+	/*background:url(../images/index/wave-front.png) 100% 100% repeat-x;*/
+	animation: wavefront 8s linear 0s normal infinite;
+	-webkit-animation: wavefront 8s linear 0s normal infinite;
+	-moz-animation: wavefront 8s linear 0s normal infinite;
+	-ms-animation: wavefront 8s linear 0s normal infinite;
+	-o-animation: wavefront 8s linear 0s normal infinite;
 }
-
+.wave-size{
+	font-size: 12.45em;
+	font-family: 'icomoon';
+	display: inline-block;
+	margin-left: -0.2%;
+}
+.m-wave-bg{
+	width: 100%;
+	height: 50%;
+	position:absolute;
+	bottom: 0;
+	background-color: #bfeaff;
+	z-index: 1;
+}
 
 
 

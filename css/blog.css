@@ -26,33 +26,15 @@
 	float:left;
 	height:100%;
 	margin:0 5%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 30px;
 	color:#ec6941;
 	cursor: pointer;
+	border-bottom:2px solid #ec6941;
 }
 .m-toggle ul li:hover{
 	color:#0075a9;
-}
-.m-toggle ul li span{
-	display:block;
-	width: 100%;	
-	height: 3px;
-	border-radius: 50%;
-	background-color: #FFF6C8;
-}
-.m-toggle ul li span:hover{
-	background-color: #0075a9;
-}
-.m-toggle ul li span span{
-	width: 55%;	
-	height: 100%;
-	margin: 0 auto;
-	background-color: #ffe048;
-	display:block;
-}
-.m-toggle ul li span span:hover{
-	background-color: #0075a9;
+	border-bottom:2px solid #0075a9;
 }
 .m-main-content{
 	width:100%;
@@ -76,8 +58,8 @@
 	float:left;
 	width:5%;
 	height:100%;
-	font-size: 2.2rem;
-	font-weight: bold;
+	font-size: 1.5rem;
+	/*font-weight: bold;*/
 	display: inline-block;
 }
 .icon-color{
@@ -93,14 +75,17 @@
 	margin-left: 5%;
 }
 .m-blog-box{
-	height:470px;
+	/*height:470px;*/
 	overflow: hidden;	
 }
 .m-blog-content{
 	float:right;
 	width:94%;
 	height:28%;
-	margin-bottom:20px;
+	margin-bottom:8%;
+}
+.m-blog-content:last-child{
+	margin-bottom:0;
 }
 .m-blog-info{
 	position:relative;
@@ -140,33 +125,44 @@
 .m-blog-list ul li{
 	width:100%;
 	height:23px;
+	color:#535050;
 }
 .m-blog-summary{
 	width:75%;
-	font-size: 1.3rem;
-	line-height: 1.3rem;
+	font-size: 1rem;
+	line-height: 1rem;
 	white-space:nowrap; 
-	overflow:hidden; 
 	text-overflow:ellipsis;
 	display: inline-block;
+	overflow:hidden; 
+	cursor: pointer;
+}
+.m-blog-summary:hover{
+	color:black;
 }
 .m-blog-time{
 	font-size: 12px;
 	line-height: 14px;
+	cursor: pointer;
 }
 .m-blog-num{
-	text-align: right;
-	margin-top:0;
+	text-align: center;
+	/*margin-top:0;*/
 }
 .m-blog-num span{
 	width:20px;
 	height:20px;
 	margin:0 2px;
-	font-size: 1.4rem;
+	font-size: 14px;
+	line-height: 20px;
 	text-align: center;
 	background-color: white;
 	border-radius: 50%;
 	display:inline-block;
+	cursor: pointer;
+}
+.m-blog-num span:hover{
+	background-color: #0073A8;
 }
 .m-news{
 	position: relative;
@@ -203,6 +199,7 @@
 }
 .m-news-title{
 	width:90%;
+	color:white;
 	line-height: 18px;	
 }
 .m-news-down{
@@ -220,8 +217,11 @@
 	margin-top: 10px;
 	margin-left: 75%;
 	color:white;
+	cursor: pointer;
 }
-
+.m-news-page span:hover{
+	color:#2FDD2A;
+}
 
 
 

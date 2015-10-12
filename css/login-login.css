@@ -1,0 +1,14 @@
+/*
+@author yu
+@time 2015.10.3
+@des mly hfut
+*/
+/*mian login css*/
+
+
+.login-save{display:block;}
+.login-save label{display:block;float:left;padding-bottom:0;margin:0 28px;width: auto;}
+.login-save label input[type="checkbox"]{width:auto;margin-right:2px;display:inline-block;margin-top:2px;border-color:red;}
+.login-save a{font-size:15px;text-decoration:underline;}
+
+.login-save a:hover{color:#A79053;}

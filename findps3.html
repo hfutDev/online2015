@@ -12,10 +12,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">   
-  <title>找回密码-输入邮箱</title>
+  <title>找回密码-重置密码</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/login-common.css">
@@ -75,19 +74,27 @@
                   <span>找回密码</span>
                   <img src="./images/login/icon-title-right.png" />
                 </div>
-                <form name="findForm" class="login-form">
+                <form name="safetyForm" class="login-form newps">
                   <div class="find-msg">
-                    <span>确认账号</span>
+                    <span class="find-title">确认账号</span>
                     <img src="./images/login/icon-arrow-right.png" />
                     <span class="find-title">安全验证</span>
                     <img src="./images/login/icon-arrow-right.png" />
-                    <span class="find-title">重置密码</span>
+                    <span >重置密码</span>
                   </div>
-                  <div class="find-prompt">请填写需要找回的账号的邮箱：</div>
-                  <label>
-                    <span>邮&nbsp;&nbsp;&nbsp;箱</span>
-                    <input name="email" type="text" />        
-                  </label>                 
+
+                  <label class="newps-name">
+                    <span>你正在找回的账户：</span>
+                    <span class="safe safe-name">Hello World</span>      
+                  </label>
+                  <label class="newps-ps">
+                    <span>新&nbsp;&nbsp;密&nbsp;&nbsp;码</span>
+                    <input name="newpassword" type="password" />
+                  </label>
+                  <label class="newps-ps">
+                    <span>再次输入</span>
+                    <input name="newpassword2" type="password" />
+                  </label>
                   
                   <div class="btn-group">
                     <a class="btn-findps-email">下一步</a>
@@ -104,7 +111,6 @@
   </div>
 </body>
 <script src="./js/jquery-1.11.3.min.js"></script>
-<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/login-common.js"></script>
-<script src="./js/login-register.js"></script>
+<script src="./js/login-findps3.js"></script>
 </html>

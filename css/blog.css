@@ -12,7 +12,7 @@
 }
 .m-toggle{
 	float:right;
-	width:21%;
+	width:22%;
 }
 .clearfloat{
 	clear:both;
@@ -26,7 +26,7 @@
 	float:left;
 	height:100%;
 	margin:0 5%;
-	font-size: 19px;
+	font-size: 2rem;
 	line-height: 30px;
 	color:#ec6941;
 	cursor: pointer;
@@ -76,7 +76,7 @@
 	float:left;
 	width:5%;
 	height:100%;
-	font-size: 18px;
+	font-size: 2.2rem;
 	font-weight: bold;
 	display: inline-block;
 }
@@ -143,8 +143,8 @@
 }
 .m-blog-summary{
 	width:75%;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
 	white-space:nowrap; 
 	overflow:hidden; 
 	text-overflow:ellipsis;
@@ -162,7 +162,7 @@
 	width:20px;
 	height:20px;
 	margin:0 2px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-align: center;
 	background-color: white;
 	border-radius: 50%;

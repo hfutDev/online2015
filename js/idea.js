@@ -1,32 +1,40 @@
+
 (function(){
 	//启动函数
 	init();
+	
 	function init(){
 		bgHover();
 		getOneMore();
 		addScrollBar();
-	}
+	};
 	function bgHover(){
+		
 		var one_bg;
 		var one_desc;
-		$('.one-body img').hover(function(){
+
+		$('.one-body img').hover(function(){		
 			one_bg = $(this).parent().find('.one-bg');
-			one_desc = $(this).parent().parent().find('.one-desc');
-			one_bg.addClass('one-bg-transform');
-			// one_desc.toggle(500);
-			one_desc.slideToggle(500);
-
+			// one_desc = $(this).parent().parent().find('.one-desc');
+			one_bg.addClass('transition-all');
+			// one_desc.slideToggle(500);
+			// valve.bg = !valve.bg;
+			
 		},function(){
-			one_bg.removeClass('one-bg-transform');			
+			one_bg.removeClass('transition-all');	
 		});
 
-		$('.module-one').hover(function(){
-		},function(){
-			var one_desc = $(this).find('.one-desc');
+		$('.module-one').hover(function(){		
+			one_desc = $(this).find('.one-desc');
+			one_desc.filter(':not(:animated)').slideDown(500);
+			
+		},function(){		
 			if(one_desc.css('display') == 'block'){
-				one_desc.slideToggle(500);
+				one_desc.slideUp(500);
 			}
+			
 		});
+		
 	}
 	function getOneMore(){
 		$('.get-one-more').click(function(){

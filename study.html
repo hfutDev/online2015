@@ -14,13 +14,12 @@
     <meta name="MobileOptimized" content="320">
     <title>学习·成长</title>
     <link rel="icon" href="images/index/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="./css/study.css">
-    <link rel="stylesheet" href="css/index.css">
     <script src="./js/respond.min.js"></script>
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
@@ -28,63 +27,78 @@
 </head>
 <body style="overflow: hidden;">
 <div class="nav">
-  <div class="nav-logo">
-    <a class="logo" href="#">
-      <!-- <img src="./images/nav/logo.png"> -->
-      <span class="icon-icon-logo" class="transition"></span>
-    </a>
-  </div>
-  <ul>
-    <li>
-      <a href="index.html" id="active">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
-      <span><span></span></span>
-    </li>
-    <li><a href="idea.html">思想观点</a></li>
-    <li><a href="study.html">学习成长</a></li>
-    <li><a href="service.html">生活服务</a></li>
-    <li><a href="blog.html">互动博客</a></li>
-    <li><a href="info.html">新闻资讯</a></li>
-  </ul>
-  <div class="nav-other">
-    <a class="nav-other-one" href="special.html">
-      <!-- <img src="./images/nav/sites.png" /> -->
-      <span class="icon-icon-nav" id="other-icon"></span>
-      <span>常用网址</span>
-    </a>
-    <a class="nav-other-one" href="#">
-     <!--  <img src="./images/nav/user-login.png"/> -->
-      <span class="icon-icon-user" id="other-icon"></span>
-      <span>用户登录</span>
-    </a>
-  </div>
+    <div class="nav-logo">
+        <a class="logo" href="#">
+            <!-- <img src="./images/nav/logo.png"> -->
+            <span class="icon-icon-logo" class="transition"></span>
+        </a>
+    </div>
+    <ul>
+        <li>
+            <a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+        </li>
+        <li><a href="idea.html">思想观点</a></li>
+        <li><a href="study.html" id="active">学习成长</a> <span><span></span></span>
+        </li>
+        <li><a href="service.html">生活服务</a></li>
+        <li><a href="blog.html">互动博客</a></li>
+        <li><a href="info.html">新闻资讯</a></li>
+    </ul>
+    <div class="nav-other">
+        <a class="nav-other-one" href="special.html">
+            <!-- <img src="./images/nav/sites.png" /> -->
+            <span class="icon-icon-nav" id="other-icon"></span>
+            <span>常用网址</span>
+        </a>
+        <a class="nav-other-one" href="#">
+            <!--  <img src="./images/nav/user-login.png"/> -->
+            <span class="icon-icon-user" id="other-icon"></span>
+            <span>用户登录</span>
+        </a>
+    </div>
 </div>
 
 <div class="content" style="background-color: #71cdcb;overflow: hidden;">
-    <div class="main" >
+    <div class="main">
         <!-- main content start-->
         <div class="main-con">
             <div class="tb-lr">
-                <embed class="embed-1 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
-                <p class="ins-title"> 学习资源 </p>
-                <embed class="embed-2 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
+                <!--<p class="ins-title"> 学习资源 </p>-->
+                <ul>
+                    <li class="ins-li">
+                        <embed class="embed-1 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
+                        <span> 学习资源 </span>
+                        <embed class="embed-2 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
+                    </li>
+                </ul>
             </div>
             <div class="img-fa">
                 <div class="img-universal img-1">
                     <p class="img-font" style="color: #fff;">标兵风采</p>
-                    <img src="images/service/book.png">
-                    <a href="#" target="_blank"><div class="img-content img-con-1"><p>动态再现，创意无限。一个神奇的涂鸦网站，以“鼠”代笔，信手涂画，小小的画板，搭载着通往创意的长廊。留下你的心情，留下你的脚步。在这里尽情发挥想象，挥洒智慧，写下属于每个人的青春华章。</p></div></a>
+                    <img src="images/study/biaobin.jpg">
+                    <a href="http://votesys.hfutonline.net/index/vote1415" target="_blank">
+                        <div class="img-content img-con-1"><p>正心笃志，明德修身。看工大标兵一展风采。</p></div>
+                    </a>
                 </div>
                 <div class="img-universal img-2">
                     <p class="img-font">课件分享</p>
-                    <img src="images/service/book.png">
-                    <a href="#" target="_blank"><div class="img-content img-con-2"><p>动态再现，创意无限。一个神奇的涂鸦网站，以“鼠”代笔，信手涂画，小小的画板，搭载着通往创意的长廊。留下你的心情，留下你的脚步。在这里尽情发挥想象，挥洒智慧，写下属于每个人的青春华章。</p></div></a>
+                    <img src="images/study/kejian.jpg">
+                    <a href="http://kejian.hfutonline.net/" target="_blank">
+                        <div class="img-content img-con-2"><p>一个分享课件的平台，开启求学的大门。</p></div>
+                    </a>
                 </div>
             </div>
             <div class="con-2">
                 <div class="tb-lr title-2">
-                    <embed class="embed-1 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
-                    <p class="ins-title"> 课堂精选 </p>
-                    <embed class="embed-2 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
+                    <ul>
+                        <li class="ins-li">
+                            <embed class="embed-1 embed-all" src="images/study/icon-title.svg"
+                                   type="image/svg+xml"></embed>
+                            <span> 课堂精选 </span>
+                            <embed class="embed-2 embed-all" src="images/study/icon-title.svg"
+                                   type="image/svg+xml"></embed>
+                        </li>
+                    </ul>
                 </div>
                 <div class="con-2-con">
                     <img src="images/study/book.png" style="width: 400px;">
@@ -101,9 +115,15 @@
 
             <div class="con-3">
                 <div class="tb-lr title-3">
-                    <embed class="embed-1 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
-                    <p class="ins-title"> 报告讲座 </p>
-                    <embed class="embed-2 embed-all" src="images/study/icon-title.svg" type="image/svg+xml"></embed>
+                    <ul>
+                        <li class="ins-li">
+                            <embed class="embed-1 embed-all" src="images/study/icon-title.svg"
+                                   type="image/svg+xml"></embed>
+                            <span> 报告讲座 </span>
+                            <embed class="embed-2 embed-all" src="images/study/icon-title.svg"
+                                   type="image/svg+xml"></embed>
+                        </li>
+                    </ul>
                 </div>
                 <div class="paint">
                     <div class="paint-head">
@@ -117,37 +137,37 @@
                             <p class="con-sec-title">今日报告</p>
                             <ul class="con-txt">
                                 <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
+                                <li><a href="#" target="_blank"></a></li>
+                                <li><a href="#" target="_blank"></a></li>
                             </ul>
                         </div>
                         <div class="con-tomo">
                             <p class="con-sec-title">明日报告</p>
                             <ul class="con-txt">
                                 <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
+                                <li><a href="#" target="_blank"></a></li>
+                                <li><a href="#" target="_blank"></a></li>
                             </ul>
                         </div>
                         <div class="con-hou">
                             <p class="con-sec-title">后日报告</p>
                             <ul class="con-txt">
                                 <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
+                                <li><a href="#" target="_blank"></a></li>
+                                <li><a href="#" target="_blank"></a></li>
                             </ul>
                         </div>
                         <div class="con-san">
                             <p class="con-sec-title">三日后报告</p>
                             <ul class="con-txt">
                                 <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
-                                <li><a href="#" target="_blank">暂无安排</a></li>
+                                <li><a href="#" target="_blank"></a></li>
+                                <li><a href="#" target="_blank"></a></li>
                             </ul>
                         </div>
                         <div class="con-more">
                             <embed src="images/study/icon-enter.svg" style="width: 16px;"></embed>
-                            <a href="#">&nbsp;更多报告</a>
+                            <a href="http://news.hfut.edu.cn/list-28-1.html" target="_blank">&nbsp;更多报告</a>
                         </div>
                     </div>
                     <div class="paint-foot">

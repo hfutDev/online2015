@@ -14,8 +14,15 @@
 	float:right;
 	width:22%;
 }
+.clearfloat:after{
+    visibility: hidden;
+    display: block;
+    clear: both;
+    content: "";
+    height: 0;
+}
 .clearfloat{
-	clear:both;
+    zoom: 1;
 }
 .m-toggle ul{
 	margin:0;

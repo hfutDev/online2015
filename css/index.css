@@ -258,7 +258,8 @@
 }
 .m-wave-back{
 	position:absolute;
-	bottom:10%;
+	bottom:-3%;
+	left:-12.45rem;
 	left:0%;
 	width:150%;
 	height:100%;
@@ -278,7 +279,8 @@
 }
 .m-wave-middle{
 	position:absolute;
-	bottom:-8.5%;
+	bottom:-10%;
+	left:-18.68rem;
 	width:150%;
 	height:100%;
 	color: #bfeaff;
@@ -298,6 +300,7 @@
 .m-wave-front{
 	position:absolute;
 	bottom:-25%;
+	left:-24.9rem;
 	width:150%;
 	height:100%;
 	color: #fff;
@@ -310,7 +313,7 @@
 	-o-animation: wavefront 8s linear 0s normal infinite;
 }
 .wave-size{
-	font-size: 12.45rem;
+	font-size: 12.45em;
 	font-family: 'icomoon';
 	display: block;
 	float: left;

@@ -258,10 +258,12 @@
 }
 .m-wave-back{
 	position:absolute;
-	bottom:10%;
+	bottom:-3%;
+	left:-12.45em;
 	left:0%;
 	width:150%;
 	height:100%;
+	color: #7ecef4;
 	z-index: 0;
 /*	background:url(../images/index/wave-back.png) 100% 100% repeat-x;*/
 	animation: waveback 8s linear 0s normal infinite;
@@ -277,9 +279,11 @@
 }
 .m-wave-middle{
 	position:absolute;
-	bottom:-8.5%;
+	bottom:-10%;
+	left:-18.68em;
 	width:150%;
 	height:100%;
+	color: #bfeaff;
 	z-index: 2;
 	/*background:url(../images/index/wave-middle.png) 100% 100% repeat-x;*/
 	animation: wavemiddle 6s linear 0s normal infinite;
@@ -296,8 +300,10 @@
 .m-wave-front{
 	position:absolute;
 	bottom:-25%;
+	left:-24.9em;
 	width:150%;
 	height:100%;
+	color: #fff;
 	z-index: 3;
 	/*background:url(../images/index/wave-front.png) 100% 100% repeat-x;*/
 	animation: wavefront 8s linear 0s normal infinite;
@@ -309,8 +315,8 @@
 .wave-size{
 	font-size: 12.45em;
 	font-family: 'icomoon';
-	display: inline-block;
-	margin-left: -0.2%;
+	display: block;
+	float: left;
 }
 .m-wave-bg{
 	width: 100%;
@@ -320,8 +326,15 @@
 	background-color: #bfeaff;
 	z-index: 1;
 }
-
-
+.back-wave{
+	color: #0068b7;
+}
+.middle-wave{
+	color: #448aca;
+}
+.front-wave{
+	color: #00b7ee;
+}
 
 
 

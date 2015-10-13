@@ -259,7 +259,7 @@
 .m-wave-back{
 	position:absolute;
 	bottom:-3%;
-	left:-12.45rem;
+	left:-12.45em;
 	left:0%;
 	width:150%;
 	height:100%;
@@ -280,7 +280,7 @@
 .m-wave-middle{
 	position:absolute;
 	bottom:-10%;
-	left:-18.68rem;
+	left:-18.68em;
 	width:150%;
 	height:100%;
 	color: #bfeaff;
@@ -300,7 +300,7 @@
 .m-wave-front{
 	position:absolute;
 	bottom:-25%;
-	left:-24.9rem;
+	left:-24.9em;
 	width:150%;
 	height:100%;
 	color: #fff;

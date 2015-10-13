@@ -124,7 +124,7 @@
 	margin:0;
 	padding:0;
 }
-.m-blog-list ul li{
+.m-blog-list ul li,.m-blog-list ul li a{
 	width:100%;
 	height:23px;
 	color:#535050;
@@ -136,7 +136,7 @@
 	overflow:hidden; 
 	cursor: pointer;
 }
-.m-blog-list ul li:hover{
+.m-blog-list ul li a:hover{
 	color:#0073A8;
 }
 .m-blog-summary{
@@ -173,6 +173,10 @@
 .m-blog-num span:hover{
 	background-color: #0073A8;
 }
+.m-blog-num span.active{
+	color: #FFF;
+	background-color: #0073A8;
+}
 .m-news{
 	position: relative;
 	width:100%;
@@ -206,7 +210,7 @@
 	margin:0;
 	list-style: disc;
 }
-.m-news-content ul li{
+.m-news-content ul li,.m-news-content ul li a{
 	width:90%;
 	color:white;
     font-size: 1rem;
@@ -217,7 +221,7 @@
     overflow: hidden;
     cursor: pointer;	
 }
-.m-news-content ul li:hover{
+.m-news-content ul li a:hover{
 	color:#3BD806;
 }
 .m-news-down{
@@ -285,7 +289,7 @@
 	margin: 0;
 	padding: 0;
 }
-.m-student-list ul li{
+.m-student-list ul li,.m-student-list ul li a{
 	margin:0 8% 0 10%;
 	font-size: 1.2rem;
 	line-height: 20px;
@@ -295,7 +299,7 @@
 	overflow:hidden; 
 	cursor: pointer;
 }
-.m-student-list ul li:hover{
+.m-student-list ul li a:hover{
 	color:#C84E03;
 }
 .m-box-dis{

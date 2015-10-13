@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	var blog = $('.m-toggle ul li');
 	var teacher = true;
+	var apiHost = '/';
 	blog.eq(0).on('click', function(){
 		$('.m-student').hide();
 		$('.m-left').show();
@@ -23,9 +24,8 @@ $(document).ready(function(){
 		blogTeacher();
 		blogNews();
 		blogStudent();
+		$(".m-blog-num span").eq(0).addClass("active");
 	}
-
-	var apiHost = 'http://news.hfut.club/';
 
 	function blogTeacher(){
 		var currentPage = 1;
@@ -34,6 +34,8 @@ $(document).ready(function(){
 		blogTeacherList(currentPage, list, items);
 
 		$('.m-blog-num').delegate('span', 'click', function(){
+			$(this).parent().find(".active").removeClass("active");
+			$(this).addClass("active");
 			currentPage = $(this).text();
 			blogTeacherList(currentPage, list, items);
 		});
@@ -42,9 +44,8 @@ $(document).ready(function(){
 			var url = apiHost + 'news/guide/' + page + '/' + list + '/' + items;
 			// var url = '../data/blogteacher.json';
 			var blogList;
-			$.get(url, function (resp){
+			$.getJSON(url, function (resp){
 				blogList = resp.blog;
-				blogList[0].blog[0].url;
 
 				var len = blogList.length;
 				for(var i = 0; i < len; i++){
@@ -54,7 +55,7 @@ $(document).ready(function(){
 
 					var blogStr = '';
 					for(var j = 0; j < items; j++){
-						blogStr += '<li><a href="' + blogList[i].blog[j].url + '">' + blogList[i].blog[j].title + '</a></li>';
+						blogStr += '<li><a href="' + blogList[i].blog[j].url + '" target="_blank">' + blogList[i].blog[j].title + '</a></li>';
 					}
 					var newList = $('.m-blog-list ul');
 					newList.html(blogStr);
@@ -69,38 +70,39 @@ $(document).ready(function(){
 		var page = 1; items = 17;
 		blogNewsList(page, items);
 
-		$('.m-news-page').eq(0).on('click', function(){
-			page--;
-			if(page < 1){
+		$('.m-news-page span').eq(0).on('click', function(){
+			if(page < 2){
 				return;
 			}
+			page--;
 			blogNewsList(page, items);
 		});
-		$('.m-news-page').eq(1).on('click', function(){
-			page++;
-			if(page > totalPage){
+		$('.m-news-page span').eq(1).on('click', function(){
+			if(page > totalPage - 1){
 				return;
 			}
+			page++;
 			blogNewsList(page, items);
 		});
 
 		function blogNewsList(page, items){
+			var people;
 			if(teacher){
 				people = "guide";
 			}else{
 				people = "student";
 			}
-			var url = apiHost + 'news/' + peopel + '/' + page + '/' + items;
+			var url = apiHost + 'news/' + people + '/' + page + '/' + items;
 			// var url = '../data/blognews.json';
 			var blogList;
-			$.get(url, function (resp){
+			$.getJSON(url, function (resp){
 				blogList = resp.blog;
 				totalPage = resp.total;
 
 				var len = blogList.length;
 				var blogStr = '';
 				for(var i = 0; i < len; i++){
-					blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
+					blogStr += '<li><a href="' + blogList[i].url + '" target="_blank">' + blogList[i].title + '</a></li>';
 				}
 
 				var newList = $('.m-news-content ul');
@@ -111,24 +113,24 @@ $(document).ready(function(){
 
 	function blogStudent(){
 		var items = 14;
-		var url = '../data/blogstudent.json';
+		// var url = '../data/blogstudent.json';
 		var url = apiHost + 'news/student/' + items;
 		// var blogList;
-		$.get(url, function (resp){
+		$.getJSON(url, function (resp){
 			blogList = resp.blog;
 			totalPage = resp.total;
 
 			var len = blogList.length;
 			var blogStr = '';
 			for(var i = 0; i < len/2; i++){
-				blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
+				blogStr += '<li><a href="' + blogList[i].url + '" target="_blank">' + blogList[i].title + '</a></li>';
 			}
 			var newList = $('.m-student-list ul').eq(0);
 			newList.html(blogStr);
 
 			blogStr = '';
 			for(var i = len/2; i < len; i++){
-				blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
+				blogStr += '<li><a href="' + blogList[i].url + '" target="_blank">' + blogList[i].title + '</a></li>';
 			}
 			newList = $('.m-student-list ul').eq(1);
 			newList.html(blogStr);

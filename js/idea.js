@@ -6,7 +6,7 @@
 	function init(){
 		bgHover();
 		getOneMore();
-		addScrollBar();
+		// addScrollBar();
 	};
 	function bgHover(){
 		

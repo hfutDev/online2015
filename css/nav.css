@@ -79,7 +79,7 @@ a{text-decoration:none;}
 	display:block;
 	width:inherit;
 	height:inherit;
-	color:rgba(255,255,255,0.85);
+	color:#C7C7C6;
 	line-height: 1.125em;
 	letter-spacing: 0.1em;
 	height: 90.91%;
@@ -90,7 +90,7 @@ a{text-decoration:none;}
 	display:block;
 	height: 9.09%;
 	width: 31%;	
-	background-color: rgba(255,224,72,0.3);
+	background-color:#635A2A;
 }
 .nav ul li span span{
 	margin: 0 auto;
@@ -110,7 +110,7 @@ a{text-decoration:none;}
 	left:0;
 }
 .nav-other-one{
-	color:rgba(255,255,255,0.75);
+	color:#C7C7C6;
 	width:100%;
 	margin:0 auto;
 	text-align:center;

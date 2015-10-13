@@ -3,7 +3,7 @@
 	init();
 	function init(){
 		getSiteMore();
-		addScrollBar();
+		// addScrollBar();
 	}
 	function getSiteMore(){
 		$('.get-site-more').click(function(){

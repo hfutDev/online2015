@@ -46,6 +46,7 @@
 	width:55%;
 	height:100%;
 	/*background-color: blue;*/
+	/*display:none;*/
 }
 .m-right{
 	float:right;
@@ -127,6 +128,9 @@
 	height:23px;
 	color:#535050;
 }
+.m-blog-list ul li:hover{
+	color:#0073A8;
+}
 .m-blog-summary{
 	width:75%;
 	font-size: 1rem;
@@ -136,9 +140,6 @@
 	display: inline-block;
 	overflow:hidden; 
 	cursor: pointer;
-}
-.m-blog-summary:hover{
-	color:black;
 }
 .m-blog-time{
 	font-size: 12px;
@@ -197,6 +198,9 @@
 	margin:0;
 	list-style: disc;
 }
+.m-news-content ul li:hover{
+	color:#3BD806;
+}
 .m-news-title{
 	width:90%;
 	color:white;
@@ -221,6 +225,67 @@
 }
 .m-news-page span:hover{
 	color:#2FDD2A;
+}
+.m-student{
+	float:left;
+	width:55%;
+	/*height:570px;*/
+	/*background-color: blue;*/
+	display:none;
+}
+.m-student-content{
+	float:left;
+	width:82%;
+	height:100%;
+	margin:7px 4% 0 4%;
+	/*background-color:pink;*/
+}
+.m-student-box{
+	width:100%;
+	height:200px;
+	float:left;
+	/*background-color: red;*/
+}
+.m-student-axis-left{
+	float:left;
+	width:26px;
+	height:100%;
+	background-color: black;
+	box-shadow: -2px 0 20px #000;
+}
+.m-student-axis-right{
+	float:right;
+	width:26px;
+	height:100%;
+	background-color: black;
+	box-shadow: -2px 0 20px #000;
+}
+.m-student-list{
+	width:calc(100% - 52px);
+	height:calc(100% - 60px);
+	margin:15px 26px;
+	padding: 15px 0 ;
+	background-color: #8ccfc4;
+}
+.m-student-list ul{
+	margin: 0;
+	padding: 0;
+}
+.m-student-list ul li{
+	margin:0 8% 0 10%;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color:#004986;
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+	overflow:hidden; 
+	cursor: pointer;
+}
+.m-student-list ul li:hover{
+	color:#C84E03;
+}
+.m-box-dis{
+	margin-top: 15%;
 }
 
 

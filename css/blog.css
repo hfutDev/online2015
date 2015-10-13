@@ -210,7 +210,7 @@
 	width:90%;
 	color:white;
     font-size: 1rem;
-	line-height: 18px;
+	line-height: 1.5rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inline-block;
@@ -288,7 +288,7 @@
 .m-student-list ul li{
 	margin:0 8% 0 10%;
 	font-size: 1.2rem;
-	line-height: 1.7rem;
+	line-height: 20px;
 	color:#004986;
 	white-space:nowrap; 
 	text-overflow:ellipsis;

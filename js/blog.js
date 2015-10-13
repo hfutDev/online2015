@@ -39,8 +39,8 @@ $(document).ready(function(){
 		});
 
 		function blogTeacherList(page, list, items){
-			// var url = apiHost + 'news/guide/' + page + '/' + list + '/' + items;
-			var url = '/online2015/data/blogteacher.json';
+			var url = apiHost + 'news/guide/' + page + '/' + list + '/' + items;
+			// var url = '../data/blogteacher.json';
 			var blogList;
 			$.get(url, function (resp){
 				blogList = resp.blog;
@@ -90,8 +90,8 @@ $(document).ready(function(){
 			}else{
 				people = "student";
 			}
-			// var url = apiHost + 'news/' + peopel + '/' + page + '/' + items;
-			var url = '/online2015/data/blognews.json';
+			var url = apiHost + 'news/' + peopel + '/' + page + '/' + items;
+			// var url = '../data/blognews.json';
 			var blogList;
 			$.get(url, function (resp){
 				blogList = resp.blog;
@@ -100,7 +100,7 @@ $(document).ready(function(){
 				var len = blogList.length;
 				var blogStr = '';
 				for(var i = 0; i < len; i++){
-					blogStr += '<li><a href="' + blogList[i].url + '"><a>' + blogList[i].title + '</li>';
+					blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
 				}
 
 				var newList = $('.m-news-content ul');
@@ -111,9 +111,9 @@ $(document).ready(function(){
 
 	function blogStudent(){
 		var items = 14;
-		var url = '/online2015/data/blogstudent.json';
-		// var url = apiHost + 'news/student/' + items;
-		var blogList;
+		var url = '../data/blogstudent.json';
+		var url = apiHost + 'news/student/' + items;
+		// var blogList;
 		$.get(url, function (resp){
 			blogList = resp.blog;
 			totalPage = resp.total;
@@ -121,14 +121,14 @@ $(document).ready(function(){
 			var len = blogList.length;
 			var blogStr = '';
 			for(var i = 0; i < len/2; i++){
-				blogStr += '<li><a href="' + blogList[i].url + '"><a>' + blogList[i].title + '</li>';
+				blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
 			}
 			var newList = $('.m-student-list ul').eq(0);
 			newList.html(blogStr);
 
 			blogStr = '';
 			for(var i = len/2; i < len; i++){
-				blogStr += '<li><a href="' + blogList[i].url + '"><a>' + blogList[i].title + '</li>';
+				blogStr += '<li><a href="' + blogList[i].url + '"></a>' + blogList[i].title + '</li>';
 			}
 			newList = $('.m-student-list ul').eq(1);
 			newList.html(blogStr);

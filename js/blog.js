@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 		function blogTeacherList(page, list, items){
 			// var url = apiHost + 'news/guide/' + page + '/' + list + '/' + items;
-			var url = '../data/blogteacher.json';
+			var url = '/online2015/data/blogteacher.json';
 			var blogList;
 			$.get(url, function (resp){
 				blogList = resp.blog;
@@ -91,7 +91,7 @@ $(document).ready(function(){
 				people = "student";
 			}
 			// var url = apiHost + 'news/' + peopel + '/' + page + '/' + items;
-			var url = '../data/blognews.json';
+			var url = '/online2015/data/blognews.json';
 			var blogList;
 			$.get(url, function (resp){
 				blogList = resp.blog;
@@ -111,7 +111,7 @@ $(document).ready(function(){
 
 	function blogStudent(){
 		var items = 14;
-		var url = '../data/blogstudent.json';
+		var url = '/online2015/data/blogstudent.json';
 		// var url = apiHost + 'news/student/' + items;
 		var blogList;
 		$.get(url, function (resp){

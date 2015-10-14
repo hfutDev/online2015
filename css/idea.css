@@ -16,7 +16,7 @@ html,body{overflow:hidden;}
 .module{float:left;width:86%;height:100%;}
 
 .main-module{width:33.3%;height:auto;float:left;}
-.module-head{margin:0 15px 0 30px;width:26px;text-align: center;float:left;height:100%;}
+.module-head{margin:30px 15px 0 30px;width:26px;text-align: center;float:left;height:100%;}
 .module-head-top{margin-top:40px;}
 .module-head img{width:100%;height:20px;}
 .module-head span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;}
@@ -31,7 +31,7 @@ html,body{overflow:hidden;}
 .one-black-top{border-top:1px solid #eae4d4;}
 .one-black img{position:absolute;left:50%;top:-7px;width:20px;height:14px;margin-left:-10px;}
 .one-body{width:160px;height:125px;position:relative;margin-left: 6px;*margin-left: 6px;float:left;border-bottom:11px solid #D6AF7C;}
-.one-body span{position:absolute;left:10px;top:4px;width:16px;display:inline-block;font-size:14px;line-height:16px;}
+.one-body span{position:absolute;left:10px;top:4px;width:16px;display:inline-block;font-size:14px;line-height:14px;}
 .one-bg{width:90px;height:89px;margin:20px auto 0 auto;background-position:-20px 0px;border-radius: 45px;}
 /*.one-body img{position:absolute;left:20px;top:0;width:90px;height:90px;}*/
 .one-body img{position:absolute;left:35px;top:19px;width:90px;height:90px;}
@@ -115,7 +115,7 @@ html,body{overflow:hidden;}
 @media screen and (min-width:1400px) and (max-width:1500px){
 	.main-logo img{margin-top:36px;}
 	.module-head-top, .module-body{margin-top:44px;}
-	.module-head{margin:0 20px 0 40px;}
+	.module-head{margin:45px 20px 0 40px;}
 	.main-module, .main-logo img{
 		-webkit-transform:scale(1.1);
 		    -ms-transform:scale(1.1);
@@ -133,7 +133,7 @@ html,body{overflow:hidden;}
 @media screen and (min-width:1501px) and (max-width:1600px){
 	.main-logo img{margin-top:42px;}
 	.module-head-top, .module-body{margin-top:50px;}
-	.module-head{margin:0 25px 0 55px;}
+	.module-head{margin:53px 25px 0 55px;}
 	.main-module, .main-logo img{
 		-webkit-transform:scale(1.17);
 		    -ms-transform:scale(1.17);
@@ -152,7 +152,7 @@ html,body{overflow:hidden;}
 @media screen and (min-width:1601px){
 	.main-logo img{margin-top:50px;}
 	.module-head-top, .module-body{margin-top:58px;}
-	.module-head{margin:0 30px 0 70px;}
+	.module-head{margin:60px 30px 0 70px;}
 	.main-module, .main-logo img{
 		-webkit-transform:scale(1.25);
 		    -ms-transform:scale(1.25);
@@ -166,6 +166,11 @@ html,body{overflow:hidden;}
 		        transform:scale(1,1);
 	    font-size:9px;
 	}
+}
+
+.icon-universal{
+	color: #DBB37D;
+	font-size: 20px;
 }
 
 

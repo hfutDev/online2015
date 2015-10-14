@@ -1,21 +1,39 @@
 /**
  * Created by surongxiang on 15/10/6.
  */
-$(".img-universal").click(function () {
-    $(this).find('a').fadeIn(1, function () {//第一个参数为动画持续时间
-        $(this).addClass('animated flipInY');//给当前元素添加摇晃效果类
+$(".img-universal").mouseenter(function () {
+    $(this).find("a").fadeIn(1, function () {//第一个参数为动画持续时间
+        $(this).find(".img-content").addClass('animated flipInY');//给当前元素添加摇晃效果类
     });
 });
-$(".img-universal").find(".img-content").mouseout(function () {
-    $(this).parent("a").hide();
+$(".img-universal").mouseleave(function () {
+    $(this).find("a").hide();
+    $(this).find(".img-content").removeClass('animated flipInY');
 });
 
-var asd = $(".main").width();
-$(".main").css("marginLeft", -asd / 2);
+var clientWid = $(window).width();
+var rate = clientWid / 1920;
+//var asd = $(".main-con").width();
+//$(".main-con").css("marginLeft", -asd / 2);
 
-//var url = "http://news.hfut.club/news/report/";
+$(".img-con-1").css({
+    width: $(".img-universal").eq(0).width() + 3,
+    height: $(".img-universal").eq(0).width()+3,
+    marginLeft: parseInt($(".img-universal").eq(0).find("img").css("paddingLeft")) + 15,
+    marginTop: parseInt($(".img-universal").eq(0).find("img").css("paddingLeft")) + 15
+});
 
-var url = "./js/report.json";
+$(".img-con-2").css({
+    width: $(".img-universal").eq(1).width()+3,
+    height: $(".img-universal").eq(1).width()+3,
+    marginLeft: parseInt($(".img-universal").eq(1).find("img").css("paddingLeft")) + 15,
+    marginTop: parseInt($(".img-universal").eq(1).find("img").css("paddingLeft")) + 15
+});
+
+
+$(".con-2").css("marginTop", 22 * rate + "%");
+//var url = "./js/report.json";
+var url = "http://news.hfut.club/news/report/";
 
 $.ajax({
     type: "get",
@@ -39,10 +57,10 @@ $.ajax({
                         $(this).html("");
                     }
                 } else {
-                    console.log(i);
                     $(this).html("");
-                    if($(this).index()==0){
+                    if ($(this).index() == 0) {
                         $(this).html("暂无安排");
+                        console.log(123);
                     }
                 }
             });

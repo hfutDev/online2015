@@ -2,11 +2,10 @@
     width: 50%;
     height: auto;
     float: left;
+    height: 100%;
 }
 .info-img img{
-    width: 230px;
-    display: block;
-    padding: 8px;
+    vertical-align: middle;
 }
 .info-left{
     float: left;
@@ -14,37 +13,96 @@
 .info-list{
     width: 50%;
     float: left;
+    height: 100%;
 }
-.info-list li{
+.info-con li{
     padding: 9px 0;
     border-top: 1px solid #777777;
 }
-.info-list li a{
+.info-div{
+    position: relative;
+    float: left;
+    margin:6px;
+}
+.info-div p{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 !important;
+    padding: 5px 0;
+}
+.info-con li a{
     width: 78%;
     display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #333333;
+    cursor: pointer;
 }
-.info-list li span{
+.info-con li a:hover{
+    text-decoration: none;
+}
+.info-con li span{
     float: right;
     color: #777;
     padding: 0 6px;
     font-size: 14px;
 }
 .info-more{
-    padding-left: 40px;
-    text-align: center;
+    position: absolute;
+    right: 9%;
+}
+
+.pagination {
+    font-size: 80%;
+    margin-top: 10px;
+}
+
+.pagination a {
+    text-decoration: none;
+    border: solid 1px #AAE;
+    color: #15B;
+}
+
+.pagination a, .pagination span {
     display: block;
+    float: left;
+    padding: 0.3em 0.5em;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    min-width:1em;
+    text-align:center;
 }
-.info-more a{
-    color: #019cec !important;
-    font-size: 18px;
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+    border: solid 1px #AAE;
 }
-.info-more span{
-    display: inline-block;
-    background-image: url(../images/info/narrow.png);
-    width: 24px;
-    height: 13px;
+
+.pagination .current.prev, .pagination .current.next{
+    color:#999;
+    border-color:#999;
+    background:#fff;
+}
+
+
+.con-title,.con-ins{
+    text-align: center;
+}
+.con-ins{
+    color: #777;
+    font-weight: normal;
+}
+.con-time{
+    margin-left: 20px;
+}
+.con-con{
+    margin-top: 20px;
+    line-height: 2em;
+    text-indent: 2em;
 }

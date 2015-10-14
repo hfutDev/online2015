@@ -6,6 +6,7 @@
 }
 .info-img img{
     vertical-align: middle;
+    float: right;
 }
 .info-left{
     float: left;
@@ -16,8 +17,12 @@
     height: 100%;
 }
 .info-con li{
-    padding: 9px 0;
+    padding: 13px 0;
     border-top: 1px solid #777777;
+}
+.info-con{
+    margin-bottom:0 !important;
+    display: block;
 }
 .info-div{
     position: relative;
@@ -55,6 +60,7 @@
 .info-more{
     position: absolute;
     right: 9%;
+    /*top: 5%;*/
 }
 
 .pagination {

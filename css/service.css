@@ -74,7 +74,7 @@
     -moz-transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
     -o-transform:rotate(90deg);
-    margin-left: -5px;
+    margin-left: -2px;
 }
 .ins-2 {
     position: absolute;
@@ -209,14 +209,14 @@
 }
 
 .sprite-main {
-    width: 100%;
+    width: 102%;
     position: absolute;
     top: 87%;
 }
 
 .sprite-ul1 {
     position: absolute;
-    left: 50%;
+    left: 49%;
     padding-left: 0 !important;
     height: 150px;
     top: -101px;

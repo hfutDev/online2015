@@ -11,8 +11,11 @@ $(".img-universal").mouseleave(function () {
     $(this).find(".img-content").removeClass('animated flipInY');
 });
 
+var clientHei = $(window).height();
 var clientWid = $(window).width();
+
 var rate = clientWid / 1920;
+var rate2 = clientHei / 900;
 //var asd = $(".main-con").width();
 //$(".main-con").css("marginLeft", -asd / 2);
 
@@ -31,7 +34,8 @@ $(".img-con-2").css({
 });
 
 
-$(".con-2").css("marginTop", 22 * rate + "%");
+$(".con-2").css("top", 460 * rate2);
+$(".book-self").css("width",150*rate+"%");
 //var url = "./js/report.json";
 var url = "http://news.hfut.club/news/report/";
 

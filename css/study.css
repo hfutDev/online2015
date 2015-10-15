@@ -31,6 +31,12 @@
     word-wrap:break-word;
     letter-spacing: 2.5px;
 }
+.ins-li-span{
+    color:#004986;
+    font-size: 24px;
+    display: inline-block;
+    margin-left: -4px;
+}
 .embed-all {
     width: 25px;
     height: 25px;
@@ -82,23 +88,24 @@
     width: 100%;
 }
 .con-2{
-    position: relative;
-    margin-top: 20%;
+    position: absolute;
 }
 .con-2-con{
-    margin-left: 4.7%;
-    position: relative;
+    margin-left: 9%;
+    /*position: relative;*/
+    /*left: 40px;*/
 }
 .con-2-con img{
-    margin-left: 2.16%;
+    margin-left: 5%;
 }
 .book-self{
     background-color: #362e2b;
-    width: 50%;
+    /*width: 150%;*/
     height: 20px;
     margin-top: -5px;
     box-shadow: 0 7px 14px 0 rgba(0,0,0,0.35);
 }
+
 .con-3{
     position: absolute;
     top: 0;
@@ -203,40 +210,40 @@
     width: 35px;
     height: 145px;
     top: 4px;
-    left: 30px;
+    left: 71px;
 }
 .baidu{
     width: 35px;
     height: 145px;
     top: 4px;
-    left: 68px;
+    left: 110px;
 }
 
 .wangyi{
     width: 35px;
     height: 145px;
     top: 4px;
-    left: 106px;
+    left: 148px;
 }
 
 .tencent{
     width: 35px;
     height: 145px;
     top: 4px;
-    left: 149px;
+    left: 186px;
 }
 .huxiu{
     width: 161px;
     height: 27px;
     top: 90px;
-    left: 238px;
+    left: 279px;
 }
 
 .douban{
     width: 161px;
     height: 27px;
     top: 119px;
-    left: 248px;
+    left: 286px;
 }
 .animated {
     -webkit-animation-duration: 1s;

@@ -19,7 +19,6 @@
 			one_bg.addClass('transition-all');
 			// one_desc.slideToggle(500);
 			// valve.bg = !valve.bg;
-			
 		},function(){
 			one_bg.removeClass('transition-all');	
 		});

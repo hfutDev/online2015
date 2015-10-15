@@ -24,9 +24,71 @@ html,body{overflow:hidden;}
 
 .site-black{width:100%;height:21px;float:left;position:relative;background-color:#000;}
 .site-black img{position: absolute;left:50%;top:-7px;width:20px;height:14px;margin-left:-10px;}
-.site-body{width:90%;margin:0 5%;height:186px;float:left;background-color:#fff;}
-.site-title{width:100%;height:28px;float:left;font-size:14px;color:#000;line-height:28px;letter-spacing:1.2px;padding-left:10px;}
+.site-body{width:90%;margin:0 5%;height:186px;float:left;background-color:#fff;position:relative;}
+.site-title{width:100%;height:28px;float:left;font-size:14px;color:#000;line-height:28px;letter-spacing:1.2px;padding-left:10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
 .site-img{width:100%;height:135px;float:left;}
+.site-description{width:100%;height:125px;background-color: #e9e9e9;;position: absolute;top: 28px;opacity: 0;animation-fill-mode: forwards;
+    width: 90%;
+    padding: 10px 5% 0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipInY {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+}
+
+
+
+
+
 .site-link{height:23px;float:right;line-height:21px;margin-right:10px;}
 .site-link img{width:16px;height:12px;float:left;display:inline-block;margin-top:6px;margin-right: 2px;}
 .site-link span{font-size:12px;text-align:center;color:#DBB37D;display:inline-block;letter-spacing:1.2px;}

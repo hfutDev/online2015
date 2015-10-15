@@ -42,12 +42,12 @@ $(document).ready(function () {
     $(".sprite-ul1").css("marginLeft", -iconw / 2);
     $(".sprite-ul2").css("marginLeft", -iconw / 2);
 
+    var ilight;
     $(".img-hover").hover(function () {
-        var i = $(this).parents(".img-all").index()-2;
-        $(".paint-light").find("div").eq(i).fadeIn();
-        $(this).mouseleave(function () {
-            $(".paint-light").find("div").eq(i).fadeOut();
-        });
+         ilight = $(this).parents(".img-all").index()-2;
+        $(".paint-light").find("div").eq(ilight).fadeIn();
+    }, function () {
+        $(".paint-light").find("div").eq(ilight).fadeOut();
     });
 
     $(".img-hover").mouseenter(function () {
@@ -56,24 +56,11 @@ $(document).ready(function () {
         }).css("display","block");
     });
     $(".img-hover").mouseleave(function () {
-    //    $(this).find("img").mouseleave(function () {
-    //        $(this).siblings("a").find(".img-content").removeClass('animated flipInY');
-    //        $(this).siblings("a").hide();
-    //    });
         $(this).find(".img-content").removeClass('animated flipInY');
         $(this).find("a").hide();
     });
 
 
-    //$(".img-universal").hover(function () {
-    //    var i = $(this).siblings("a").find(".img-content").attr("class");
-    //    i = i[20];
-    //    $(".paint-light-" + i).fadeIn();
-    //    $(".paint-light-" + i).siblings().fadeOut();
-    //    $(this).mouseout(function () {
-    //        $(".paint-light-" + i).fadeOut();
-    //    });
-    //});
 
     $(".tag-1").css("top", 25 * rate);
     $(".tag-3").css("top", 25 * rate);
@@ -90,7 +77,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $(".img-con-2").css({
-            width: $(".img-universal").eq(1).width(),
+            width: $(".img-universal").eq(1).width()+2,
             height: $(".img-universal").eq(1).width()/1.19,
             marginRight: parseInt($(".img-universal").eq(1).css("paddingLeft"))+15,
             marginTop: -parseInt($(".img-universal").eq(1).css("paddingLeft"))-parseInt($(".img-universal").eq(1).width()/1.19)-15
@@ -109,7 +96,6 @@ $(document).ready(function () {
         marginRight: parseInt($(".img-universal").eq(2).css("paddingLeft"))+15,
         marginTop: -parseInt($(".img-universal").eq(2).css("paddingLeft"))-parseInt($(".img-universal").eq(2).width()/0.56)-18
     });
-
 
 
 

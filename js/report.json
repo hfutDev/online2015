@@ -1,0 +1,231 @@
+{
+  "total": 1,
+  "current": "1",
+  "news": [
+    {
+      "aid": "50",
+      "author": "0",
+      "time": "2015-10-10",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u5085\u658c\uff1a\u6d41\u4f53\u5305\u88f9\u4f53\u548c\u526f\u77ff\u7269\u5fae\u533a\u5206\u6790\u5728\u9020\u5c71\u5e26\u91d1\u77ff\u53ca\u6591\u5ca9\u578b\u77ff\u5e8a\u4e2d\u7684\u5e94\u7528"
+    },
+    {
+      "aid": "48",
+      "author": "0",
+      "time": "2015-10-09",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e09\u5341\uff09\u4e4b\u90ed\u5764\u4e00\uff1a\u533a\u8c03\u5173\u952e\u73af\u8282\u6709\u5173\u6280\u672f\u8981\u6c42\u53ca\u5de5\u4f5c\u4e2d\u5e94\u6ce8\u610f\u7684\u95ee\u9898"
+    },
+    {
+      "aid": "49",
+      "author": "0",
+      "time": "2015-10-09",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u6821\u53cb\u62a5\u544a\u4f1a\uff08\u516d\uff09\u4e4b\u5f20\u591a\u592a\uff1a\u975e\u7eaf\u526a\u5207\u8ba1\u7b97\u6cd5\uff0c\u787c\u915a\u919b\u6811\u8102\u53ca\u5e94\u7528"
+    },
+    {
+      "aid": "47",
+      "author": "0",
+      "time": "2015-10-08",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e5d\uff09\u4e4b\u5b63\u6770\uff1a\u592a\u9633\u80fd\u5149\u4f0f\u5149\u70ed\u7efc\u5408\u5229\u7528\u6280\u672f\u8fdb\u5c55"
+    },
+    {
+      "aid": "45",
+      "author": "0",
+      "time": "2015-10-07",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e03 \uff09\u4e4b\u5468\u7ef4\u864e\uff1a\u7cbe\u5bc6\u5149\u7535\u6d4b\u91cf\u6280\u672f"
+    },
+    {
+      "aid": "46",
+      "author": "0",
+      "time": "2015-10-07",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u516b\uff09\u4e4b\u738b\u4e2d\u5b87\uff1a\u8bef\u5dee\u5206\u6790\u65b9\u6cd5\u4e0e\u7cbe\u5bc6\u6d4b\u91cf\u5de5\u7a0b"
+    },
+    {
+      "aid": "44",
+      "author": "0",
+      "time": "2015-10-06",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u91d1\u94c3\u98de\uff1aDecoding of quantum MDS codes from Reed-Solomon codes"
+    },
+    {
+      "aid": "29",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "Daniel David\uff1aAn Introduction to Geometric Algebra & its Applications in Computer Science"
+    },
+    {
+      "aid": "30",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u4e09\uff09\u4e4b\u65b9\u5bb6\u718a\uff1a\u65b0\u578b\u5149\u7535\u4f20\u611f\u5668\u4ef6\u7ec4\u4ef6\u548c\u6807\u51c6\u6d4b\u8bd5\u65b9\u6cd5"
+    },
+    {
+      "aid": "31",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u56db\uff09\u4e4b\u859b\u79b9\u80dc\uff1a\u975e\u81ea\u6cbb\u7cfb\u7edf\u8fd0\u52a8\u7a33\u5b9a\u6027\u7684\u91cf\u5316\u7406\u8bba\u548c\u7535\u529b\u7cfb\u7edf\u6682\u6001..."
+    },
+    {
+      "aid": "32",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u4e94\uff09\u4e4b\u5f20\u627f\u6167\uff1a\u6211\u56fd\u65b0\u80fd\u6e90\u6c7d\u8f66\u53d1\u5c55\u4e0e\u52a8\u529b\u7535\u6c60\u7efc\u5408\u68c0\u6d4b\u6280\u672f"
+    },
+    {
+      "aid": "33",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u516d\uff09\u4e4b\u5d14\u7fd4\uff1a\u7535\u5de5\u7406\u8bba\u4e0e\u65b0\u6280\u672f\u65b0\u8fdb\u5c55"
+    },
+    {
+      "aid": "34",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u4e03\uff09\u4e4b\u90ed\u9759\u6ce2\uff1a\u538b\u7f29\u611f\u77e5\u4e0e\u7a00\u758f\u4fe1\u53f7\u5904\u7406"
+    },
+    {
+      "aid": "35",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u516b\uff09\u4e4b\u5f20\u6ce2\uff1a\u7535\u529b\u7535\u5b50\u975e\u7ebf\u6027\u5206\u6790\u548c\u63a7\u5236"
+    },
+    {
+      "aid": "36",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u4e5d\uff09\u4e4b\u66fe\u7965\u541b\uff1a\u57fa\u4e8e\u7535\u7f51\u6682\u6001\u4fe1\u53f7\u4ea7\u751f\u548c\u4f20\u8f93\u7279\u6027\u7684\u6682\u6001\u4fdd\u62a4\u65b0\u539f..."
+    },
+    {
+      "aid": "37",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\uff09\u4e4b\u738b\u7fa4\u4eac\uff1a\u7535\u673a\u53ca\u5176\u9a71\u52a8\u6280\u672f\u7684\u8fdb\u5c55"
+    },
+    {
+      "aid": "38",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e00\uff09\u4e4b\u4f55\u6b63\u53cb\uff1a\u8f68\u9053\u4ea4\u901a\u7efc\u5408\u76d1\u63a7\u7cfb\u7edf\u53ef\u9760\u6027\u548c\u5b89\u5168\u6027\u8bc4\u4f30"
+    },
+    {
+      "aid": "39",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e8c\uff09\u4e4b\u7a0b\u660e\uff1a\u7535\u673a\u6df7\u6c8c\u9a71\u52a8\u53ca\u5176\u5e94\u7528\u7684\u65b0\u8fdb\u5c55"
+    },
+    {
+      "aid": "40",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e09\uff09\u4e4b\u6587\u52b2\u5b87\uff1a\u79fb\u52a8\u5f0f\u76f4\u63a5\u51b7\u5374\u9ad8\u6e29\u8d85\u5bfc\u78c1\u50a8\u80fd\u7cfb\u7edf"
+    },
+    {
+      "aid": "41",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u56db\uff09\u4e4b\u6bdb\u519b\u53d1\uff1a\u5927\u6570\u636e\u65f6\u4ee3\u53ec\u5524\u201c\u7535\u7ea4\u201d\u9ad8\u901f\u4e92\u8fde\u65b0\u6280\u672f"
+    },
+    {
+      "aid": "42",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u4e94\uff09\u4e4b\u5b59\u957f\u94f6\uff1a\u7ebf\u6027\u7cfb\u7edf\u5206\u6790\u4e0e\u4f18\u5316"
+    },
+    {
+      "aid": "43",
+      "author": "0",
+      "time": "2015-09-30",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u4e8c\u5341\u516d\uff09\u4e4b\u674e\u5174\u6e90\uff1a\u5148\u8fdb\u63a7\u5236\u7406\u8bba\u5728\u9ad8\u538b\u76f4\u6d41\u8f93\u7535\u7cfb\u7edf\u4e2d\u7684\u5e94\u7528\u7814\u7a76"
+    },
+    {
+      "aid": "28",
+      "author": "0",
+      "time": "2015-09-29",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u6821\u53cb\u62a5\u544a\u4f1a\uff08\u4e94\uff09\u4e4b\u9ec4\u5e86\u5b89\uff1aMEMS\u6280\u672f\u8fdb\u5c55"
+    },
+    {
+      "aid": "26",
+      "author": "0",
+      "time": "2015-09-28",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u7cfb\u5217\u62a5\u544a\uff08\u5341\u4e8c\uff09\u4e4b\u66fe\u6653\u6d0b\uff1a\u590d\u65e6\u5927\u5b66\u4fe1\u606f\u5b89\u5168\u82af\u7247\u6280\u672f\u7814\u7a76\u8fdb\u5c55\u4ecb\u7ecd"
+    },
+    {
+      "aid": "27",
+      "author": "0",
+      "time": "2015-09-28",
+      "from": "\u5408\u80a5\u5de5\u4e1a\u5927\u5b66\u65b0\u95fb\u6587\u5316\u7f51",
+      "type": null,
+      "thumb": "",
+      "title": "\u6821\u5e86\u4e03\u5341\u5468\u5e74\u6821\u53cb\u62a5\u544a\u4f1a\uff08\u56db\uff09\u4e4b\u5218\u660e\uff1a\u963b\u53d8\u5b58\u50a8\u5668\u6280\u672f"
+    }
+  ]
+}

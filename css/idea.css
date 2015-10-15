@@ -16,7 +16,7 @@ html,body{overflow:hidden;}
 .module{float:left;width:86%;height:100%;}
 
 .main-module{width:33.3%;height:auto;float:left;}
-.module-head{margin:30px 15px 0 30px;width:26px;text-align: center;float:left;height:100%;}
+.module-head{margin:40px 14px 0 26px;width:26px;text-align: center;float:left;height:100%;}
 .module-head-top{margin-top:40px;}
 .module-head img{width:100%;height:20px;}
 .module-head span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;}

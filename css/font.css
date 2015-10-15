@@ -6,7 +6,7 @@
 html {font-size:12px}
 
 /*width query*/
-/*@media screen and (min-width:1020px) and (max-width:1199px) {
+@media screen and (min-width:1020px) and (max-width:1199px) {
     html {
         font-size: 10px
     }
@@ -16,7 +16,7 @@ html {font-size:12px}
     html {
         font-size: 11px
     }
-}*/
+}
  
 @media screen and (min-width:1270px) and (max-width:1400px) {
     html {

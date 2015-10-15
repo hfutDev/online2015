@@ -1,3 +1,67 @@
+body{
+	position:relative;
+}
+/*.m-modal{
+	position:fixed;
+	width:100%;
+	height:100%;
+}*/
+.m-modal-box{
+	position:absolute;
+	width:50%;
+	height:100%;
+	overflow: hidden;	
+	z-index: 100;
+}
+.m-modal-left{
+	left:0;
+	background: url(../images/index/bg-left.jpg);
+	background-size: 100% 100%;
+	background-position:right;
+}
+.m-modal-right{
+	right:0;
+	background-image: url(../images/index/bg-right.jpg);
+	background-size: 100% 100%;
+	background-position:right;
+}
+.m-modal-pic{
+	position:absolute;
+	top:50%;
+	width:300px;
+	height:300px;
+	margin-top: -150px;
+	display:none;	
+}
+.m-block{
+	display:block;
+}
+.m-pic-left{
+	right:0;
+	margin-right:-150px;
+}
+.m-pic-right{
+	left:0;
+	margin-left:-150px;
+}
+.m-modal-transform{
+	width:0;
+	transition:width 5s;
+	-webkit-transition:width 5s;
+	-moz-transition:width 5s;
+	-ms-transition:width 5s;
+	-o-transition:width 5s;
+}
+.m-modal-font{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:220px;
+	height:560px;
+	margin-top: -280px;
+	margin-left: -110px;	
+	z-index: 100;
+}
 .m-content{
 	position:absolute;
 	background-image: url(../images/index/bg.jpg);

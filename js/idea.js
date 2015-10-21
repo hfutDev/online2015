@@ -25,10 +25,13 @@
 
 		$('.module-one').hover(function(){		
 			one_desc = $(this).find('.one-desc');
-			one_desc.filter(':not(:animated)').slideDown(500);
+			if(!one_desc.hasClass('one-show')){
+				one_desc.filter(':not(:animated)').slideDown(500);
+			}
+			
 			
 		},function(){		
-			if(one_desc.css('display') == 'block'){
+			if(one_desc.css('display') == 'block' && !one_desc.hasClass('one-show')){
 				one_desc.slideUp(500);
 			}
 			

@@ -6,21 +6,21 @@
 /*mian content css*/
 html,body{overflow:hidden;}
 .content{overflow-y:scroll;overflow-x:hidden;}
-.main{margin:0 2%;width:96%;height:100%;font-size: 15px;}
+.main{margin:0 3%;width:94%;height:100%;font-size: 15px;}
 /*.main{overflow:hidden;}*/
 .shadow{box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);}
 
 .main-logo{width:12%;height:100%;float:left;}
 .main-logo img{width:54px;height:210px;margin-top:32px;}
 
-.module{float:left;width:100%;height:100%;}
+.module{float:left;width:100%;height:100%;margin-top: 40px;}
 
 .main-module{width:25%;height:auto;float:left;}
-.module-head{margin:40px 14px 0 26px;width:26px;text-align: center;float:left;height:100%;}
+.module-head{margin:0 14px 0 26px;width:26px;text-align: center;float:left;height:100%;}
 .module-head-top{margin-top:40px;}
 .module-head img{width:100%;height:20px;}
 .module-head span{word-wrap:break-word;word-break:normal;line-height:18px;display:inline-block;}
-.module-body{float:left;width:172px;margin:40px 0 0 0;}
+.module-body{float:left;width:172px;}
 .module-one{color:#D6AF7C;float: left;}
 
 .green .one-body,.green .one-link-body, .green .one-color, .green .one-link, .green .one-more-link{background-color:#01696a;}
@@ -68,7 +68,10 @@ span.one-short{word-wrap:break-word;word-break:normal;right:10px;bottom:8px;left
 .one-silk{position:absolute;left:50%;top:-7px;width:48px;height:129px;margin-left:-18px;cursor:pointer;}
 .one-more{display:none;float: left;}
 .fix-silk{width:160px;margin-left:6px;height:140px;float:left;position:relative;}
-
+.icon-universal{
+	color: #DBB37D;
+	font-size: 20px;
+}
 /*one link body*/
 .one-link-body{}
 .one-link-body a{line-height:16px;display:block;margin-left: 12px;}
@@ -114,75 +117,52 @@ span.one-short{word-wrap:break-word;word-break:normal;right:10px;bottom:8px;left
 	to{-o-transform:rotate(360deg)}
 }
 
-
-/*change scroll bar css*/
-.mCSB_scrollTools{right:-5px;}
-.mCSB_inside>.mCSB_container{
-	margin-right:9px;
-}
-
-
-
 @media screen and (min-width:1400px) and (max-width:1500px){
-	.main-logo img{margin-top:36px;}
-	.module-head-top, .module-body{margin-top:44px;}
-	.module-head{margin:45px 20px 0 40px;}
-	.main-module, .main-logo img{
-		-webkit-transform:scale(1.1);
-		    -ms-transform:scale(1.1);
-		        transform:scale(1.1);
-        margin-top:54px;
+	.module{
+		-webkit-transform:scale(1, 1.1);
+		    -ms-transform:scale(1, 1.1);
+		        transform:scale(1, 1.1);
+		padding-top:68px;
 	}
-	.main-logo img{margin-top:72px;}
-	.module-body .one-body span, .module-body .one-desc span{
-		-webkit-transform:scale(1,1);
-		    -ms-transform:scale(1,1);
-		        transform:scale(1,1);
-	    font-size:13px;
+	.module-one, .get-one-more, .fix-silk, .module-head span{
+		-webkit-transform:scale(1.1, 1);
+		    -ms-transform:scale(1.1, 1);
+		        transform:scale(1.1, 1);
 	}
+	.module-body{margin-left:16px;}
 }
 @media screen and (min-width:1501px) and (max-width:1600px){
-	.main-logo img{margin-top:42px;}
-	.module-head-top, .module-body{margin-top:50px;}
-	.module-head{margin:53px 25px 0 55px;}
-	.main-module, .main-logo img{
-		-webkit-transform:scale(1.17);
-		    -ms-transform:scale(1.17);
-		        transform:scale(1.17);
-        margin-top:56px;
+	.module{
+		-webkit-transform:scale(1, 1.17);
+		    -ms-transform:scale(1, 1.17);
+		        transform:scale(1, 1.17);
+		padding-top:86px;
 	}
-	.main-logo img{margin-top:68px;}
-	.module-body .one-body span, .module-body .one-desc span{
-		-webkit-transform:scale(1,1);
-		    -ms-transform:scale(1,1);
-		        transform:scale(1,1);
-	    font-size:11px;
+	.module-one, .get-one-more, .fix-silk, .module-head span{
+		-webkit-transform:scale(1.15, 1);
+		    -ms-transform:scale(1.15, 1);
+		        transform:scale(1.15, 1);
 	}
+	.module-body{margin-left:24px;}
 
 }
 @media screen and (min-width:1601px){
-	.main-logo img{margin-top:50px;}
-	.module-head-top, .module-body{margin-top:58px;}
-	.module-head{margin:60px 30px 0 70px;}
-	.main-module, .main-logo img{
-		-webkit-transform:scale(1.25);
-		    -ms-transform:scale(1.25);
-		        transform:scale(1.25);
-        margin-top:96px;
+	.module{
+		-webkit-transform:scale(1, 1.25);
+		    -ms-transform:scale(1, 1.25);
+		        transform:scale(1, 1.25);
+		padding-top:116px;
 	}
-	/*.main-logo img{margin-top:78px;}*/
-	.module-body .one-body span, .module-body .one-desc span{
-		-webkit-transform:scale(1,1);
-		    -ms-transform:scale(1,1);
-		        transform:scale(1,1);
-	    font-size:9px;
+	.module-one, .get-one-more, .fix-silk, .module-head span{
+		-webkit-transform:scale(1.2, 1);
+		    -ms-transform:scale(1.2, 1);
+		        transform:scale(1.2, 1);
 	}
+	.module-body{margin-left:28px;}
+
 }
 
-.icon-universal{
-	color: #DBB37D;
-	font-size: 20px;
-}
+
 
 
 

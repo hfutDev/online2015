@@ -10,26 +10,28 @@
 		var top, oldTop, oldtime, newtime, onlyDoOne = true;
 
 		$('.pulldown-silk').click(function(){
-			var parentElement = $(this).parent().parent();
+			var parentElement = $(this).parent().parent();			
+			top = parentElement.css('top');
+			top = Number( top.substr(0, top.length - 2) );
 			/*第一次执行，获取高度*/
 			if(onlyDoOne){
-				oldTop = parentElement.css('top');
-				oldTop = Number( oldTop.substr(0, oldTop.length - 2) );
+				oldTop = top;
 				onlyDoOne = false;
 			}
-			parentElement.filter(':not(:animated)').animate({
-				top:4
-			},800);
-			top = 4;
+			parentElement.addClass('pulldown-animation');
+			if(top < 0){				
+				parentElement.addClass('pulldown-show');
+			}else{
+				parentElement.removeClass('pulldown-show');
+			}
+			
 			oldtime = new Date();
 			/*设计定时器，20s 后自动关闭*/
 			setTimeout(function(){
 				top = parentElement.css('top');
 				top = Number( top.substr(0, top.length - 2) );
 				if(top >= 0){
-					parentElement.filter(':not(:animated)').animate({
-						top: oldTop
-					},800);
+					parentElement.removeClass('pulldown-show');
 				}
 			}, 10000);
 		});
@@ -37,10 +39,7 @@
 			top = $(this).css('top');
 			top = Number( top.substr(0, top.length - 2) );
 			if(top >= 0){
-				$(this).filter(':not(:animated)').animate({
-					top: oldTop
-				},800);
-				top = oldTop;
+				$(this).removeClass('pulldown-show');
 			}
 		});
 	}

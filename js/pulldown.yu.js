@@ -6,7 +6,7 @@
 		var opts = $.extend(defaults, options);
 		
 		$(this).css('position','relative');
-		$(this).append('<link rel="stylesheet" href="./css/pulldown.yu.css"><div class="pulldown"><div class="pulldown-black"><img class="pulldown-circle" src="./images/nav/circle.png" /></div><div class="pulldown-body"><img src="./images/nav/erweima.png" /></div><div class="pulldown-black"><img class="pulldown-silk" src="./images/nav/silk.png"></div></div>');
+		$(this).append('<link rel="stylesheet" href="./css/pulldown.yu.css"><div class="pulldown"><div class="pulldown-black"><img class="pulldown-circle" src="./images/nav/circle.png" /></div><div class="pulldown-body"><img src="./images/nav/wechat.jpg" /></div><div class="pulldown-black"><img class="pulldown-silk" src="./images/nav/silk.png"></div></div>');
 		var top, oldTop, oldtime, newtime, onlyDoOne = true;
 
 		$('.pulldown-silk').click(function(){

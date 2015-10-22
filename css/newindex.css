@@ -11,6 +11,7 @@
 .content>ul>li{
 	width:50px;
 	height:50px;
+	margin:10px;
 	font-size: 3.125rem;
 	cursor: pointer;
 }
@@ -41,7 +42,7 @@
 }
 .n-box img{
 	width:90%;
-	margin:0 auto;
+	/*margin:0 auto;*/
 	display:block;
 }
 .n-box-text{
@@ -55,7 +56,7 @@
 .n-box-text p{
 	margin:0;
 	color:#002549;
-	font-size: 16px;
+	font-size: 1.25rem;
 	line-height: 24px;
 }
 .n-box-line{
@@ -64,6 +65,9 @@
 	margin: 10px 0;
 	border-radius: 30%;
 	background-color: #E4DAAD;
+}
+.n-box-nav img{
+	width:100px;
 }
 .n-box-nav ul{
 	padding:0;

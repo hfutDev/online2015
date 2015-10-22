@@ -1,8 +1,24 @@
+.content{
+	position: relative;
+	background:url(../images/newindex/bg.jpg);
+}
+.content>ul{
+	position: absolute;
+	right:0;
+	top:50%;
+	margin-top:-150px;
+}
+.content>ul>li{
+	width:50px;
+	height:50px;
+	font-size: 3.125rem;
+	cursor: pointer;
+}
 .n-content{
-	width:800px;
+	width:70%;
 	/*height:100%;*/
 	margin:0 auto;
-	margin-top:50px;
+	margin-top:5%;
 	/*background-color: red;*/
 }
 .floatleft{
@@ -19,18 +35,18 @@
     height: 0;
 }
 .n-box{
-	width:400px;
-	height:400px;
+	width:50%;
+	/*height:400px;*/
 	/*background-color: blue;*/
 }
 .n-box img{
-	width:350px;
+	width:90%;
 	margin:0 auto;
 	display:block;
 }
 .n-box-text{
-	width:200px;
-	margin:130px auto 0 auto;
+	width:50%;
+	margin:30% auto 0 auto;
 }
 .n-box-title{
 	font-size: 40px;
@@ -38,6 +54,7 @@
 }
 .n-box-text p{
 	margin:0;
+	color:#002549;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -46,16 +63,18 @@
 	height:4px;
 	margin: 10px 0;
 	border-radius: 30%;
-	background-color: red;
+	background-color: #E4DAAD;
 }
 .n-box-nav ul{
 	padding:0;
+	clear:both;
 }
 .n-box-nav ul li{
 	float:left;
-	width:100px;
-	height:100px;
-	margin-right:75px;
+	width:10%;
+	/*height:100px;*/
+	margin-top: 6%;
+	margin-right:12%;
 	cursor: pointer;
 }
 .n-box-nav ul li:last-child{

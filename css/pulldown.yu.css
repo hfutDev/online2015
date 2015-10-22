@@ -1,0 +1,48 @@
+/**
+*@author yu
+*@time 2015.10.5
+*@desc css for pull down plugs
+*/
+
+.pulldown{position:absolute;right:4%;top:-94px;width:100px;height:106px;}
+.pulldown-show{top:6px;}
+.pulldown-black{width:100%;height:10px;background-color:black;position:relative;}.pulldown-circle{position:absolute;left:50%;top:-4px;width:12px;height:8px;margin-left:-6px;cursor:pointer;}
+.pulldown-silk{position:absolute;left:50%;top:6px;width:27px;height:65px;margin-left:-10px;cursor:pointer;}
+.pulldown-body{width:90%;height:86px;margin:0 5%;background-color:white;text-align:center;}
+.pulldown-body img{width:72px;height:72px;padding-top:8px;display: inline-block;}
+.pulldown-animation{
+	animation: all 0.8s ease-in-out;
+	-o-transition:all 0.8s ease-in-out;
+	-ms-transition:all 0.8s ease-in-out;
+	-moz-transition:all 0.8s ease-in-out;
+	-webkit-transition:all 0.8s ease-in-out;
+}
+@media screen and (min-width:1400px) and (max-width:1500px){
+	.pulldown{
+		-webkit-transform:scale(1.1);
+		    -ms-transform:scale(1.1);
+		        transform:scale(1.1);
+        top:-96px;
+	}
+	.pulldown-show{top:10px;}
+}
+@media screen and (min-width:1501px) and (max-width:1600px){
+	.pulldown{
+		-webkit-transform:scale(1.17);
+		    -ms-transform:scale(1.17);
+		        transform:scale(1.17);
+		top:-98px;
+	}
+	.pulldown-show{top:14px;}
+
+}
+@media screen and (min-width:1601px){
+	.pulldown{
+		-webkit-transform:scale(1.25);
+		    -ms-transform:scale(1.25);
+		        transform:scale(1.25);
+    	top:-102px;
+	}
+	.pulldown-show{top:19px;}
+
+}

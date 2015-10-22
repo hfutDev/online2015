@@ -121,9 +121,9 @@ html,body{overflow:hidden;}
 @media screen and (min-width:1601px){
 	.main-top{margin-top:70px ;}
     .sites-group{
-        -webkit-transform:scale(1, 1.25);
-            -ms-transform:scale(1, 1.25);
-                transform:scale(1, 1.25);
+        -webkit-transform:scale(1, 1.23);
+            -ms-transform:scale(1, 1.23);
+                transform:scale(1, 1.23);
         margin-top: 102px;
         height:78%;
     }

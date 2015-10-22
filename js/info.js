@@ -6,15 +6,55 @@
 
 $(document).ready(function () {
 
+    var url1;
+    getNews("http://news.hfut.club/news/news/1/10000");
+    $("body").on('click', '[data-action]', function () {
+        var actionName = $(this).data('action');
+        switch (actionName) {
+            case 'a-all':
+                url1="http://news.hfut.club/news/news/1/10000";
+                getNews(url1);
+                break;
+            case 'a-tongzhi':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 1;
+                getNews(url1);
+                break;
+            case 'a-zhilai':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 7;
+                getNews(url1);
+                break;
+            case 'a-renzai':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 8;
+                getNews(url1);
+                break;
+            case 'a-baogao':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 3;
+                getNews(url1);
+                break;
+            case 'a-shetuan':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 5;
+                getNews(url1);
+                break;
+            case 'a-xueba':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 6;
+                getNews(url1);
+                break;
+            case 'a-xianei':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 11;
+                getNews(url1);
+                break;
+            case 'a-yishi':
+                url1 = "http://news.hfut.club/news/news/1/10000/" + 9;
+                getNews(url1);
+                break;
+        }
+    });
 
-    var url1 = "http://news.hfut.club/news/news/1/5000";
     //var url1 = "./js/report.json";
     //var url2 = "./js/report2.json";
     var url2 = "http://news.hfut.club/news/news/";
     var clientWid = $(window).width();
     var rate = clientWid / 1920;
-    getNews(url1);
-
 
 
     $(".info-div").css("width", $(".info-img").width() / 2 - 40);
@@ -32,17 +72,26 @@ $(document).ready(function () {
             type: "get",
             //url: url+i+"/"+item,
             url: url,
-            contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data) {
+                $(".btn-all").removeClass("curr");
+                if(data.errmsg=='none'){
+                    $(".info-con").empty();
+                    $(".info-more").hide();
+                    return;
+                }
+                if(url=="http://news.hfut.club/news/news/1/10000"){
+                    $(".btn-all").addClass("curr");
+                }
+                $(".info-more").show();
                 var item = 11 * rate;
                 item = Math.round(item);
                 initPagination(item);
                 var a = $(".info-con").find("li").height();
                 var b = $(".info-con").find("li").css("paddingTop");
                 var c = parseInt(a) + parseInt(b) * 2;
-                var itemnum = parseInt(item)+1;
-                var xh = parseInt(c*itemnum)-31;
+                var itemnum = parseInt(item) + 1;
+                var xh = parseInt(c * itemnum) - 31;
                 $(".info-con").css("height", xh);
                 //$(".info-list").find("li:last").css("borderBottom", "1px solid #ddd");
                 function handlePaginationClick(page_index, jq) {
@@ -76,11 +125,11 @@ $(document).ready(function () {
                 function getContent(url, aid) {
                     $.ajax({
                         type: "get",
-                        url: url+aid,
+                        url: url + aid,
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         success: function (data) {
-                            console.log(url+aid);
+                            console.log(url + aid);
                             $(".con-title").html(data.title);
                             $(".con-time").html(data.time);
                             $(".con-con").html(data.content);
@@ -98,8 +147,6 @@ $(document).ready(function () {
             }
         });
     }
-
-
 
 
 });

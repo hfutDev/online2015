@@ -133,7 +133,7 @@
 		// Initialize options with default values
 		opts = $.extend({
 			items_per_page:10,
-			num_display_entries:11,
+			num_display_entries:5,
 			current_page:0,
 			num_edge_entries:0,
 			link_to:"#",

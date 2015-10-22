@@ -26,6 +26,7 @@
 }
 .info-div{
     position: relative;
+    cursor: pointer;
     float: left;
     margin:6px;
 }
@@ -57,12 +58,31 @@
     padding: 0 6px;
     font-size: 14px;
 }
+
+
 .info-more{
     position: absolute;
     right: 9%;
     /*top: 5%;*/
 }
-
+.btn-all{
+    display: block;
+    padding: 0.3em 1em;
+    min-width: 1em;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 40px;
+    border: solid 1px #AAE;
+    color: #15B;
+    background-color: transparent;
+    margin-top: 10px;
+}
+.curr{
+    background: #26B;
+    color: #fff;
+    border: solid 1px #AAE;
+}
 .pagination {
     font-size: 80%;
     margin-top: 10px;

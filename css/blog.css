@@ -39,6 +39,10 @@
 	cursor: pointer;
 	border-bottom:2px solid #ec6941;
 }
+.m-toggle .m-toggle-active{
+	color:#0075a9;
+	border-bottom:2px solid #0075a9;
+}
 .m-toggle ul li:hover{
 	color:#0075a9;
 	border-bottom:2px solid #0075a9;
@@ -230,7 +234,7 @@
     cursor: pointer;	
 }
 .m-news-content ul li a:hover{
-	color:#3BD806;
+	color:#FFEC83;
 }
 .m-news-down{
 	position: relative;	

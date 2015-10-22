@@ -4,6 +4,8 @@ $(document).ready(function(){
   blog.eq(0).on('click', function(){
 	$('.m-student').hide();
 	$('.m-left').show();
+	$('.m-toggle ul li').eq(1).removeClass('m-toggle-active');
+	$('.m-toggle ul li').eq(0).addClass('m-toggle-active');
 	$('.m-left .m-blog-title span').eq(1).text('优秀博导');
 	$('.m-right .m-blog-title span').eq(1).text('精美博文');
 	teacher = true;
@@ -12,6 +14,8 @@ $(document).ready(function(){
   blog.eq(1).on('click', function(){
 	$('.m-left').hide();
 	$('.m-student').show();
+	$('.m-toggle ul li').eq(0).removeClass('m-toggle-active');
+	$('.m-toggle ul li').eq(1).addClass('m-toggle-active');
 	$('.m-student .m-blog-title span').eq(1).text('精美博文');
 	$('.m-right .m-blog-title span').eq(1).text('原创美文');
 	teacher = false;

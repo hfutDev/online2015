@@ -43,18 +43,21 @@
 			var current = $(this);
 			var one_more = $(this).parent().find('.one-more');
 			one_more.slideToggle('slow', function(){
-				current.fadeOut();
+				// current.fadeOut();
+				current.slideUp(200);
 			});
 		});
 		$('.one-silk').click(function(){
-			var one_more = $(this).parent().parent().find('.one-more');
-			var get_more = $(this).parent().parent().find('.get-one-more');
+			var one_more = $(this).parent().parent().parent().find('.one-more');
+			var get_more = $(this).parent().parent().parent().find('.get-one-more');
 			if(one_more.css('display') == 'block'){
-				get_more.fadeIn();
+				// get_more.fadeIn();
+				get_more.slideDown(200);
 			}
 			one_more.slideToggle('slow', function(){
 				if(one_more.css('display') == 'block'){
-					get_more.fadeOut();
+					// get_more.fadeOut();
+					get_more.slideUp(200);
 				}
 			});
 		});

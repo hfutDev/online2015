@@ -9,8 +9,16 @@
 		$(this).append('<link rel="stylesheet" href="./css/pulldown.yu.css"><div class="pulldown"><div class="pulldown-black"><img class="pulldown-circle" src="./images/nav/circle.png" /></div><div class="pulldown-body"><img src="./images/nav/wechat.jpg" /></div><div class="pulldown-black"><img class="pulldown-silk" src="./images/nav/silk.png"></div></div>');
 		var top, oldTop, oldtime, newtime, onlyDoOne = true;
 
-		$('.pulldown-silk').click(function(){
-			var parentElement = $(this).parent().parent();			
+		
+		$('.pulldown-silk').hover(function(){
+			top = $(this).parent().parent().css('top');
+			top = Number( top.substr(0, top.length - 2) );
+			if( top < 0){
+				pulldownSilk($(this));
+			}
+		});
+		function pulldownSilk(ele){
+			var parentElement = ele.parent().parent();			
 			top = parentElement.css('top');
 			top = Number( top.substr(0, top.length - 2) );
 			/*第一次执行，获取高度*/
@@ -34,7 +42,8 @@
 					parentElement.removeClass('pulldown-show');
 				}
 			}, 10000);
-		});
+		}
+
 		$('.pulldown').click(function(){
 			top = $(this).css('top');
 			top = Number( top.substr(0, top.length - 2) );

@@ -15,7 +15,11 @@
 	height:50px;
 	margin:10px 20px 10px 10px;
 	font-size: 3.125rem;
+	color:#02264A;
 	cursor: pointer;
+}
+.content> ul > li:hover{
+	color:#30A9DD;
 }
 .n-content{
 	width:67.98%;

@@ -45,8 +45,8 @@
 
 .instruction-title {
     color: #fff;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.25em;
+    /*font-weight: bold;*/
     letter-spacing: 2.5px;
 }
 
@@ -187,7 +187,7 @@
 .tag-all p {
     padding: 0;
     margin: 0;
-    font-size: 12px !important;
+    font-size: 0.95em !important;
     color: #405b87;
     cursor: pointer;
 }

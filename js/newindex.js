@@ -9,4 +9,11 @@ $(document).ready(function(){
 		src = src.split('1.');
 		e.target.src = src[0] + '.' + src[1];
 	});
+
+	$.each($('.content>ul>li'), function (index, item) {
+		var obj = $(item);
+		obj.hover(function() {
+			obj.toggleClass('active');
+		});
+	})
 });

@@ -6,20 +6,244 @@
 }
 .content>ul{
 	position: absolute;
-	right:0;
+	right:3.5%;
 	top:50%;
-	margin-top:-150px;
+	margin-top:-16.2%;
 }
 .content>ul>li{
 	width:50px;
 	height:50px;
-	margin:10px 20px 10px 10px;
-	font-size: 3.125rem;
-	color:#02264A;
+	margin:45% 0;
+	font-size: 3.125em;
+	position: relative;
+	/*color:#02264A;*/
 	cursor: pointer;
 }
-.content> ul > li:hover{
-	color:#30A9DD;
+
+/*mingliyuan*/
+.icon-mingliyuan{
+	animation: mingliyuanout 0.1s ease-out forwards;
+	-webkit-animation: mingliyuanout 0.1s ease-out forwards;infinite;
+	-moz-animation: mingliyuanout 0.1s ease-out forwards;infinite;
+	-ms-animation: mingliyuanout 0.1s ease-out forwards;infinite;
+	-o-animation: mingliyuanout 0.1s ease-out forwards;infinite;
+}
+.icon-mingliyuan:hover{
+	animation: mingliyuanin 0.2s ease-out forwards;
+	-webkit-animation: mingliyuanin 0.2s ease-out forwards;
+	-moz-animation: mingliyuanin 0.2s ease-out forwards;
+	-ms-animation: mingliyuanin 0.2s ease-out forwards;
+	-o-animation: mingliyuanin 0.2s ease-out forwards;
+}
+@keyframes mingliyuanin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#17c6ee;
+	}
+}
+@keyframes mingliyuanout{
+	0%{
+		color:#17c6ee;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+/*redstar*/
+.icon-redstar{
+	animation: redstarout 0.1s ease-out forwards;
+	-webkit-animation: redstarout 0.1s ease-out forwards;infinite;
+	-moz-animation: redstarout 0.1s ease-out forwards;infinite;
+	-ms-animation: redstarout 0.1s ease-out forwards;infinite;
+	-o-animation: redstarout 0.1s ease-out forwards;infinite;
+}
+.icon-redstar:hover{
+	/*color:#30A9DD;*/
+	animation: redstarin 0.2s ease-out forwards;
+	-webkit-animation: redstarin 0.2s ease-out forwards;
+	-moz-animation: redstarin 0.2s ease-out forwards;
+	-ms-animation: redstarin 0.2s ease-out forwards;
+	-o-animation: redstarin 0.2s ease-out forwards;
+}
+@keyframes redstarin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#eb6877;
+	}
+}
+@keyframes redstarout{
+	0%{
+		color:#eb6877;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+/*book*/
+.icon-book{
+	animation: bookout 0.1s ease-out forwards;
+	-webkit-animation: bookout 0.1s ease-out forwards;infinite;
+	-moz-animation: bookout 0.1s ease-out forwards;infinite;
+	-ms-animation: bookout 0.1s ease-out forwards;infinite;
+	-o-animation: bookout 0.1s ease-out forwards;infinite;
+}
+.icon-book:hover{
+	animation: bookin 0.2s ease-out forwards;
+	-webkit-animation: bookin 0.2s ease-out forwards;
+	-moz-animation: bookin 0.2s ease-out forwards;
+	-ms-animation: bookin 0.2s ease-out forwards;
+	-o-animation: bookin 0.2s ease-out forwards;
+}
+@keyframes bookin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#00b59d;
+	}
+}
+@keyframes bookout{
+	0%{
+		color:#00b59d;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+/*music*/
+.icon-music{
+	animation: musicout 0.1s ease-out forwards;
+	-webkit-animation: musicout 0.1s ease-out forwards;infinite;
+	-moz-animation: musicout 0.1s ease-out forwards;infinite;
+	-ms-animation: musicout 0.1s ease-out forwards;infinite;
+	-o-animation: musicout 0.1s ease-out forwards;infinite;
+}
+.icon-music:hover{
+	animation: musicin 0.2s ease-out forwards;
+	-webkit-animation: musicin 0.2s ease-out forwards;
+	-moz-animation: musicin 0.2s ease-out forwards;
+	-ms-animation: musicin 0.2s ease-out forwards;
+	-o-animation: musicin 0.2s ease-out forwards;
+}
+@keyframes musicin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#ff8534;
+	}
+}
+@keyframes musicout{
+	0%{
+		color:#ff8534;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+/*usb*/
+.icon-usb{
+	animation: usbout 0.1s ease-out forwards;
+	-webkit-animation: usbout 0.1s ease-out forwards;infinite;
+	-moz-animation: usbout 0.1s ease-out forwards;infinite;
+	-ms-animation: usbout 0.1s ease-out forwards;infinite;
+	-o-animation: usbout 0.1s ease-out forwards;infinite;
+}
+.icon-usb:hover{
+	animation: usbin 0.2s ease-out forwards;
+	-webkit-animation: usbin 0.2s ease-out forwards;
+	-moz-animation: usbin 0.2s ease-out forwards;
+	-ms-animation: usbin 0.2s ease-out forwards;
+	-o-animation: usbin 0.2s ease-out forwards;
+}
+@keyframes usbin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#846add;
+	}
+}
+@keyframes usbout{
+	0%{
+		color:#846add;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+/*brush*/
+.icon-brush{
+	animation: brushout 0.1s ease-out forwards;
+	-webkit-animation: brushout 0.1s ease-out forwards;infinite;
+	-moz-animation: brushout 0.1s ease-out forwards;infinite;
+	-ms-animation: brushout 0.1s ease-out forwards;infinite;
+	-o-animation: brushout 0.1s ease-out forwards;infinite;
+}
+.icon-brush:hover{
+	animation: brushin 0.2s ease-out forwards;
+	-webkit-animation: brushin 0.2s ease-out forwards;
+	-moz-animation: brushin 0.2s ease-out forwards;
+	-ms-animation: brushin 0.2s ease-out forwards;
+	-o-animation: brushin 0.2s ease-out forwards;
+}
+@keyframes brushin{
+	0%{
+		color:#02264A;
+	}
+	100%{
+		color:#fff837;
+	}
+}
+@keyframes brushout{
+	0%{
+		color:#fff837;
+	}
+	100%{
+		color:#02264A;
+	}
+}
+
+.content>ul>li>p{
+	opacity: 0;
+	position: absolute;
+	width:150%;
+	text-align:right;
+	font-family:'Microsoft YaHei', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	left: -180%;
+	top: 0;
+	font-size: 0.33em;
+	color:#02264A;
+	animation: testout 0.1s ease-out forwards;
+}
+.content> ul > li.active>p{
+	animation: textin 0.2s ease-out forwards;
+}
+
+@keyframes textin{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes testout{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
 }
 .n-content{
 	width:67.98%;
@@ -53,7 +277,11 @@
 	vertical-align: bottom;
 }
 .n-logo{
-	width:100%;
+	width:95%;
+	float:right;
+	padding-top:7%;
+	position:relative;
+	bottom:-17px;
 }
 .n-text{
 	width:100%;
@@ -70,8 +298,8 @@
 .n-box-text p{
 	margin:0;
 	color:#002549;
-	font-size: 1.25rem;
-	line-height: 2.2rem;
+	font-size: 1.25em;
+	line-height: 2.2em;
 }
 .n-box-line{
 	width:50px;
@@ -81,7 +309,8 @@
 	background-color: #E4DAAD;
 }
 .n-box-nav img{
-	width:100px;
+	/*width:100px;*/
+	width:100%;
 }
 .n-box-nav ul{
 	padding:0;
@@ -98,10 +327,6 @@
 .n-box-nav ul li:last-child{
 	margin-right: 0;
 }
-
-
-
-
 
 
 

@@ -42,8 +42,10 @@
         
         obj.hover(function () {
             desc.filter(':not(:animated)').addClass('flipInY');
+            desc.css({flter:"Alpha(Opacity=0)"});
         }, function () {
             desc.filter(':not(:animated)').removeClass('flipInY');
+            desc.css({flter:"Alpha(Opacity=100)"});
         });
         // obj.click(function () {
         //     if(desc.hasClass('flipInY')){

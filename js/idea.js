@@ -13,7 +13,7 @@
 		var one_bg;
 		var one_desc;
 
-		$('.one-body img').hover(function(){		
+		$('.one-body').hover(function(){		
 			one_bg = $(this).parent().find('.one-bg');
 			// one_desc = $(this).parent().parent().find('.one-desc');
 			one_bg.addClass('transition-all');

@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var blog = $('.m-toggle ul li');
   var teacher = true;
+	$('.m-toggle ul li').eq(0).addClass('m-toggle-active');
   blog.eq(0).on('click', function(){
 	$('.m-student').hide();
 	$('.m-left').show();

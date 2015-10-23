@@ -10,9 +10,10 @@ $(document).ready(function(){
 		e.target.src = src[0] + '.' + src[1];
 	});
 
-	$.each($('.content>ul>li'), function (index, item) {
+	$.each($('.content>ul>li a p span'), function (index, item) {
 		var obj = $(item);
 		obj.hover(function() {
+			console.log(111111111111)
 			obj.toggleClass('active');
 		});
 	})

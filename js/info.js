@@ -50,8 +50,6 @@ $(document).ready(function () {
         }
     });
 
-    //var url1 = "./js/report.json";
-    //var url2 = "./js/report2.json";
     var url2 = "http://news.hfut.club/news/news/";
     var clientWid = $(window).width();
     var rate = clientWid / 1920;
@@ -62,9 +60,6 @@ $(document).ready(function () {
     $(".info-div").find("p").css({
         "width": $(".info-img").width() / 4 - 24
     });
-
-
-    $(".main").css("paddingTop", 7 / rate + "%");
 
 
     function getNews(url) {

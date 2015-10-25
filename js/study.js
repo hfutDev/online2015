@@ -11,14 +11,6 @@ $(".img-universal").mouseleave(function () {
     $(this).find(".img-content").removeClass('animated flipInY');
 });
 
-var clientHei = $(window).height();
-var clientWid = $(window).width();
-
-var rate = clientWid / 1920;
-var rate2 = clientHei / 900;
-//var asd = $(".main-con").width();
-//$(".main-con").css("marginLeft", -asd / 2);
-
 $(".img-con-1").css({
     width: $(".img-universal").eq(0).width() + 3,
     height: $(".img-universal").eq(0).width()+3,
@@ -33,10 +25,6 @@ $(".img-con-2").css({
     marginTop: parseInt($(".img-universal").eq(1).find("img").css("paddingLeft")) + 15
 });
 
-
-$(".con-2").css("top", 460 * rate2);
-$(".book-self").css("width",150*rate+"%");
-//var url = "./js/report.json";
 var url = "http://news.hfut.club/news/report/";
 
 $.ajax({

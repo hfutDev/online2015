@@ -1,13 +1,214 @@
+.con-2-con img{
+    width: 400px;
+}
+.book-link{
+    height: 145px;
+    width: 35px;
+    float: left;
+    display: block;
+    position: relative;
+}
+.book-div{
+    position: absolute;
+    overflow: hidden;
+    left: 31px;
+    top: 0;
+}
+.con-2-con{
+    margin-left: 5%;
+    text-align: center;
+}
+.book-self{
+    height: 15px;
+    width: 390px;
+    margin-top: -5px;
+}
+.con-2{
+    top: 370px;
+}
+.book-link{
+    margin-right: 3px;
+}
+.book-dao{
+    height: 27px;
+    width: 159px;
+}
+.huxiu{
+    left: 56px;
+    top: 90px;
+}
+.douban{
+    left: 64px;
+    top: 90px;
+}
+.con-more{
+    font-size: 14px;
+    color: #fff;
+    text-align: right;
+}
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .con-2-con{
+        margin-left: 5%;
+        text-align: center;
+    }
+    .book-self{
+        height: 15px;
+        width: 390px;
+        margin-top: -3px;
+    }
+    .con-2{
+        top: 370px;
+    }
+    .book-div{
+        left: 31px;
+        top: 0;
+    }
+    .book-link{
+        margin-right: 3px;
+    }
+    .book-dao{
+        height: 27px;
+        width: 159px;
+    }
+    .huxiu{
+        left: 56px;
+        top: 90px;
+    }
+    .douban{
+        left: 64px;
+        top: 90px;
+    }
+    .con-more{
+        margin-top: -10px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .con-2-con{
+        margin-left: 5%;
+        text-align: center;
+    }
+    .book-self{
+        height: 15px;
+        width: 445px;
+        margin-top: -5px;
+    }
+    .con-2{
+        top: 370px;
+    }
+    .book-div{
+        left: 54px;
+        top: 0;
+    }
+    .book-link{
+        margin-right: 3px;
+    }
+    .book-dao{
+        height: 27px;
+        width: 159px;
+    }
+    .huxiu{
+        left: 56px;
+        top: 90px;
+    }
+    .douban{
+        left: 64px;
+        top: 90px;
+    }
+    .con-more{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+    .con-2-con{
+        margin-left: 6%;
+        text-align: center;
+    }
+    .book-self{
+        height: 20px;
+        width: 485px;
+        margin-top: -4px;
+    }
+    .con-2{
+        top: 410px;
+    }
+    .book-div{
+        left: 65px;
+        top: 0;
+    }
+    .book-link{
+        margin-right: 3px;
+    }
+    .book-dao{
+        height: 27px;
+        width: 159px;
+    }
+    .huxiu{
+        left: 56px;
+        top: 90px;
+    }
+    .douban{
+        left: 64px;
+        top: 90px;
+    }
+    .con-more{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .con-2-con{
+        margin-left: 5%;
+        text-align: center;
+    }
+    .book-self{
+        height: 20px;
+        width: 640px;
+        margin-top: -5px;
+    }
+    .con-2{
+        top: 435px;
+    }
+    .book-div{
+        left: 80px;
+        top: 0;
+    }
+    .book-link{
+        height: 206px;
+        width: 50px;
+        margin-right: 5px;
+    }
+    .book-dao{
+        height: 40px;
+        width: 231px;
+    }
+    .huxiu{
+        left: 78px;
+        top: 128px;
+    }
+    .douban{
+        left: 90px;
+        top: 129px;
+    }
+    .con-2-con img{
+        width: 575px;
+    }
+    .con-more{
+        margin-top: 117px;
+    }
+}
+.book-self{
+    background-color: #362e2b;
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.35);
+}
+
 .tb-lr {
-    -webkit-writing-mode: vertical-lr;
-    writing-mode: tb-rl;
-    writing-mode: vertical-lr;
     font-size: 1.5em !important;
     color: #000000;
     float: left;
-    /*font-weight: 600;*/
-    margin-top: -40px;
-    margin-left: -30px;
+    margin-top: -20px;
+    margin-left: -60px;
 }
 .main{
     position: relative;
@@ -16,26 +217,18 @@
     margin-top: 10%;
     width: 100%;
     position: absolute;
-    /*left: 50%;*/
 }
 
-.ins-title {
-    float: left;
-    letter-spacing: 2.5px;
-    margin: 5px 0;
-}
 .ins-li{
-    clear: both;
-    float:right;
-    display:inline;
     word-wrap:break-word;
     letter-spacing: 0.5px;
+    width: 26px;
+    text-align: center;
 }
 .ins-li-span{
     color:#004986;
     font-size: 1.1em;
     display: inline-block;
-    margin-left: -4px;
 }
 .embed-all {
     width: 25px;
@@ -57,7 +250,6 @@
     margin: 5%;
 }
 .img-fa {
-    /*position: absolute;*/
 }
 .img-universal {
     display: inline-block;
@@ -90,22 +282,6 @@
 .con-2{
     position: absolute;
 }
-.con-2-con{
-    margin-left: 9%;
-    /*position: relative;*/
-    /*left: 40px;*/
-}
-.con-2-con img{
-    margin-left: 5%;
-}
-.book-self{
-    background-color: #362e2b;
-    /*width: 150%;*/
-    height: 20px;
-    margin-top: -5px;
-    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.35);
-}
-
 .con-3{
     position: absolute;
     top: 0;
@@ -113,7 +289,8 @@
     width: 38.51%;
 }
 .paint{
-    margin-left: 50px;
+    margin-left: 30px;
+    text-align: center;
 }
 .paint-head{
     background-color: #000;
@@ -135,11 +312,11 @@
 .paint-body{
     background-color: #004986;
     height: 100%;
-    width: 84%;
-    margin-left: 3%;
+    margin: 0 3%;
     padding: 25px 20px 10px 25px;
     box-shadow: 0 11px 24px 0 rgba(0,0,0,0.35);
     color: #fff;
+    text-align: left;
 }
 .paint-body li{
     width: 271px;
@@ -156,36 +333,12 @@
 .paint-foot-circle{
     z-index: 100;
     position: relative;
-    left: 50%;
     top: 19px;
-    margin-left: -9px;
 }
 .con-title{
     font-size: 18px;
 }
 
-@media screen and (min-height:700px) and (max-height:800px){
-    .con-more{
-        margin-top: -10px !important;
-    }
-}
-@media screen and (min-height:801px) and (max-height:900px){
-    .con-more{
-        margin-top: 40px !important;
-    }
-}
-@media screen and (min-height:901px) and (max-height:1500px){
-    .con-more{
-        margin-top: 125px !important;
-    }
-}
-
-.con-more{
-    font-size: 14px;
-    color: #fff;
-    text-align: right;
-    margin-top: 50px;
-}
 .con-more a{
     color: #fff;
 }
@@ -219,49 +372,8 @@
     margin: 0;
     padding: 15px;
 }
-.book-link{
-    display: block;
-    position: absolute;
-}
-.zhihu{
-    width: 35px;
-    height: 145px;
-    top: 4px;
-    left: 71px;
-}
-.baidu{
-    width: 35px;
-    height: 145px;
-    top: 4px;
-    left: 110px;
-}
 
-.wangyi{
-    width: 35px;
-    height: 145px;
-    top: 4px;
-    left: 148px;
-}
 
-.tencent{
-    width: 35px;
-    height: 145px;
-    top: 4px;
-    left: 186px;
-}
-.huxiu{
-    width: 161px;
-    height: 27px;
-    top: 90px;
-    left: 279px;
-}
-
-.douban{
-    width: 161px;
-    height: 27px;
-    top: 119px;
-    left: 286px;
-}
 .shadow{
     box-shadow:0px 12px 22px 0px rgba(0,0,0,0.35);
 }

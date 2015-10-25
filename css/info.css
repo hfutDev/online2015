@@ -1,37 +1,71 @@
-.info-img{
+.main {
+    margin-top: 14%;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .main {
+        margin-top: 12%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .main {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+    .main {
+        margin-top: 11%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main {
+        margin-top: 8%;
+    }
+}
+
+.info-img {
     width: 50%;
     height: auto;
     float: left;
     height: 100%;
 }
-.info-img img{
+
+.info-img img {
     vertical-align: middle;
     float: right;
 }
-.info-left{
+
+.info-left {
     float: left;
 }
-.info-list{
+
+.info-list {
     width: 50%;
     float: left;
     height: 100%;
 }
-.info-con li{
+.info-con li {
     padding: 16px 0;
     border-top: 1px solid #ddd;
 }
-.info-con{
-    margin-bottom:0 !important;
+
+.info-con {
+    margin-bottom: 0 !important;
     display: block;
 }
-.info-div{
+
+.info-div {
     position: relative;
     cursor: pointer;
     float: left;
-    margin:6px;
+    margin: 6px;
 }
-.info-div p{
-    background: rgba(0,0,0,0.5);
+
+.info-div p {
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     position: absolute;
@@ -40,7 +74,8 @@
     margin: 0 !important;
     padding: 5px 0;
 }
-.info-con li a{
+
+.info-con li a {
     width: 78%;
     display: block;
     overflow: hidden;
@@ -49,23 +84,25 @@
     color: #333333;
     cursor: pointer;
 }
-.info-con li a:hover{
+
+.info-con li a:hover {
     text-decoration: none;
 }
-.info-con li span{
+
+.info-con li span {
     float: right;
     color: #777;
     padding: 0 6px;
     font-size: 14px;
 }
 
-
-.info-more{
+.info-more {
     position: absolute;
     right: 9%;
     /*top: 5%;*/
 }
-.btn-all{
+
+.btn-all {
     display: block;
     padding: 0.3em 1em;
     min-width: 1em;
@@ -78,11 +115,13 @@
     background-color: transparent;
     margin-top: 10px;
 }
-.curr{
+
+.curr {
     background: #26B;
     color: #fff;
     border: solid 1px #AAE;
 }
+
 .pagination {
     font-size: 80%;
     margin-top: 10px;
@@ -100,8 +139,8 @@
     padding: 0.3em 0.5em;
     margin-left: 5px;
     margin-bottom: 5px;
-    min-width:1em;
-    text-align:center;
+    min-width: 1em;
+    text-align: center;
 }
 
 .pagination .current {
@@ -110,29 +149,30 @@
     border: solid 1px #AAE;
 }
 
-.pagination .current.prev, .pagination .current.next{
-    color:#999;
-    border-color:#999;
-    background:#fff;
+.pagination .current.prev, .pagination .current.next {
+    color: #999;
+    border-color: #999;
+    background: #fff;
 }
 
-
-.con-title,.con-ins{
+.con-title, .con-ins {
     text-align: center;
 }
-.con-ins{
+
+.con-ins {
     color: #777;
     font-weight: normal;
 }
-.con-time{
+
+.con-time {
     margin-left: 20px;
 }
-.con-con{
+
+.con-con {
     margin-top: 20px;
     line-height: 2em;
     text-indent: 2em;
 }
-
 
 small {
     font-size: 85%

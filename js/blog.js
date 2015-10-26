@@ -60,8 +60,8 @@ $(document).ready(function(){
 		  for(var j = 0; j < items; j++){
 			blogStr += '<li><a href="' + blogList[i].blog[j].url + '" target="_blank">' + blogList[i].blog[j].title + '</a></li>';
 		  }
-		  var newList = $('.m-blog-list ul');
-		  newList.html(blogStr);
+		  var newList = $('.m-blog-list');
+		  newList.eq(i).find("ul").html(blogStr);
 		}
 	  });
 	}

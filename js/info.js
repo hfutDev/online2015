@@ -6,51 +6,52 @@
 
 $(document).ready(function () {
 
+    var baseurl = "/news/news/1/10000/";
     var url1;
-    getNews("http://news.hfut.club/news/news/1/10000");
+    getNews("/news/news/1/10000");
     $("body").on('click', '[data-action]', function () {
         var actionName = $(this).data('action');
         switch (actionName) {
             case 'a-all':
-                url1="http://news.hfut.club/news/news/1/10000";
+                url1="/news/news/1/10000";
                 getNews(url1);
                 break;
             case 'a-tongzhi':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 1;
+                url1 = baseurl + 1;
                 getNews(url1);
                 break;
             case 'a-zhilai':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 7;
+                url1 = baseurl + 7;
                 getNews(url1);
                 break;
             case 'a-renzai':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 8;
+                url1 = baseurl + 8;
                 getNews(url1);
                 break;
             case 'a-baogao':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 3;
+                url1 = baseurl + 3;
                 getNews(url1);
                 break;
             case 'a-shetuan':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 5;
+                url1 = baseurl + 5;
                 getNews(url1);
                 break;
             case 'a-xueba':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 6;
+                url1 = baseurl + 6;
                 getNews(url1);
                 break;
             case 'a-xianei':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 11;
+                url1 = baseurl + 11;
                 getNews(url1);
                 break;
             case 'a-yishi':
-                url1 = "http://news.hfut.club/news/news/1/10000/" + 9;
+                url1 = baseurl + 9;
                 getNews(url1);
                 break;
         }
     });
 
-    var url2 = "http://news.hfut.club/news/news/";
+    var url2 = "/news/news/";
     var clientWid = $(window).width();
     var rate = clientWid / 1920;
 
@@ -75,7 +76,7 @@ $(document).ready(function () {
                     $(".info-more").hide();
                     return;
                 }
-                if(url=="http://news.hfut.club/news/news/1/10000"){
+                if(url=="/news/news/1/10000"){
                     $(".btn-all").addClass("curr");
                 }
                 $(".info-more").show();

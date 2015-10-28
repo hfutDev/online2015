@@ -44,7 +44,7 @@ html,body{overflow:hidden;}
 	background-position:-20px 0px;
 	border-radius: 45px;
 }*/
-span.one-short{word-wrap:break-word;word-break:normal;width:16px;right:10px;bottom:8px;left: initial;top: initial;font-size: 0.9em;}
+span.one-short{word-wrap:break-word;word-break:normal;width:16px;left:160px;top:110px;font-size: 0.9em;}
 
 /*.one-body img{position:absolute;left:20px;top:0;width:90px;height:90px;}*/
 .one-body img{position:absolute;left:50px;top:29px;width:90px;height:90px;}

@@ -11,9 +11,9 @@ $(document).ready(function () {
 
     $(".img-con-1").css({
         width: $(".img-universal").eq(0).width() + 5,
-        height: $(".img-universal").eq(0).width() + 5,
-        "marginLeft": parseInt($(".img-universal").eq(0).css("paddingLeft")) + 13,
-        "marginTop": -parseInt($(".img-universal").eq(0).css("paddingLeft")) - parseInt($(".img-universal").eq(0).width()) - 22
+        height: $(".img-universal").eq(0).width() + 8,
+        "marginLeft": parseInt($(".img-universal").eq(0).css("paddingLeft")) + 14,
+        "marginTop": -parseInt($(".img-universal").eq(0).css("paddingLeft")) - parseInt($(".img-universal").eq(0).width()) - 24
     });
 
     $(".img-con-2").css({

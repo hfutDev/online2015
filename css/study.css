@@ -51,6 +51,9 @@
         margin-left: 5%;
         text-align: center;
     }
+    .main-con{
+        margin-top: 7% !important;
+    }
     .book-self{
         height: 15px;
         width: 390px;
@@ -313,7 +316,7 @@
     background-color: #004986;
     height: 100%;
     margin: 0 3%;
-    padding: 25px 20px 10px 25px;
+    padding: 20px 20px 10px 25px;
     box-shadow: 0 11px 24px 0 rgba(0,0,0,0.35);
     color: #fff;
     text-align: left;

@@ -52,7 +52,6 @@ $.ajax({
                     $(this).html("");
                     if ($(this).index() == 0) {
                         $(this).html("暂无安排");
-                        console.log(123);
                     }
                 }
             });

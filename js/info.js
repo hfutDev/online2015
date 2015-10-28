@@ -124,7 +124,6 @@ $(document).ready(function () {
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         success: function (data) {
-                            console.log(url + aid);
                             $(".con-title").html(data.title);
                             $(".con-time").html(data.time);
                             $(".con-con").html(data.content);

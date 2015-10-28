@@ -24,9 +24,9 @@
 	color:#02264A;
 }
 .content>ul>li p i{
-	width:50px;
-	height:50px;
-	margin:45% 0;
+	width: 50px;
+	height: 50px;
+	margin: 45% 0;
 	font-size: 3.125em;
 	position: relative;
 	/*color:#02264A;*/
@@ -34,9 +34,10 @@
 }
 .content>ul>li p span{
 	position: absolute;
-	top:11px;
-	left:-58px;
-	font-size: 0.33em;
+	top: 13px;
+	left: -66px;
+	font-size: 0.5em;
+	font-size: 1rem;
 	cursor: pointer;
 	opacity: 0;
 }

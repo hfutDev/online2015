@@ -7,18 +7,17 @@
 		bgHover();
 		getOneMore();
 		// addScrollBar();
+		silkHoverRemove();
 	};
 	function bgHover(){
 		
 		var one_bg;
 		var one_desc;
 
-		$('.one-body').hover(function(){		
+		$('.one-body>.one-bg, .one-body>.one-bg+img').hover(function(){		
 			one_bg = $(this).parent().find('.one-bg');
 			// one_desc = $(this).parent().parent().find('.one-desc');
 			one_bg.addClass('transition-all');
-			// one_desc.slideToggle(500);
-			// valve.bg = !valve.bg;
 		},function(){
 			one_bg.removeClass('transition-all');	
 		});
@@ -64,6 +63,14 @@
 	}
 	function addScrollBar(){
 		$('.main').mCustomScrollbar();
+	}
+	function silkHoverRemove(){
+		$('.module-body .one-silk').each(function(){
+			var get_one_more = $(this).parent().parent().parent().find('.get-one-more');
+			if(!get_one_more.length){
+				$(this).css('cursor','initial');
+			}
+		});
 	}
 
 })()

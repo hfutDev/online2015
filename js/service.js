@@ -25,15 +25,15 @@ $(document).ready(function () {
     $(".img-con-4").css({
         width: $(".img-universal").eq(3).width() + 3,
         height: $(".img-universal").eq(3).width() + 3,
-        marginLeft: parseInt($(".img-universal").eq(3).css("paddingLeft")) + 14,
+        marginLeft: parseInt($(".img-universal").eq(3).css("paddingLeft")) + 16,
         marginTop: -parseInt($(".img-universal").eq(3).css("paddingLeft")) - parseInt($(".img-universal").eq(3).width()) - 22
     });
 
     $(".img-con-3").css({
         width: $(".img-universal").eq(2).width() + 5,
-        height: $(".img-universal").eq(2).width() / 0.55 + 2,
+        height: $(".img-universal").eq(2).width() / 0.56+7,
         marginLeft: parseInt($(".img-universal").eq(2).css("paddingLeft")) + 13,
-        marginTop: -parseInt($(".img-universal").eq(2).css("paddingLeft")) - parseInt($(".img-universal").eq(2).width() / 0.56) - 22
+        marginTop: -parseInt($(".img-universal").eq(2).css("paddingLeft")) - parseInt($(".img-universal").eq(2).width() / 0.56) - 24
     });
 
     $(".sprite-main").find(".sprite-ul1 li").each(function () {

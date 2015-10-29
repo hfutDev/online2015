@@ -40,7 +40,7 @@ $(document).ready(function () {
                 url1 = baseurl + 6;
                 getNews(url1);
                 break;
-            case 'a-xianei':
+            case 'a-xiaonei':
                 url1 = baseurl + 11;
                 getNews(url1);
                 break;
@@ -94,7 +94,7 @@ $(document).ready(function () {
                     page_index++;
                     $(".info-list").find("ul").empty();
                     for (var i = (page_index - 1) * item; i <= page_index * item - 1 && i < data.news.length; i++) {
-                        var tab = "<li title='" + data.news[i].aid + "'><span>" + data.news[i].time + "</span><a  data-toggle='modal' data-target='#myModal'>" + data.news[i].title + "</a></li>";
+                        var tab = "<li title='" + data.news[i].aid + "'><span>" + data.news[i].time + "</span><a  data-toggle='modal' data-target='#myModal' onclick=\"getContent('" + url2 + "'," + data.news[i].aid + ");\">" + data.news[i].title + "</a></li>";
                         $(".info-list").find("ul").append(tab);
                     }
                     return false;
@@ -113,29 +113,6 @@ $(document).ready(function () {
                         callback: handlePaginationClick
                     });
                 }
-
-                $(".info-list").find("ul").find("li").click(function () {
-                    getContent(url2, $(this).attr("title"));
-                });
-
-                function getContent(url, aid) {
-                    $.ajax({
-                        type: "get",
-                        url: url + aid,
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: function (data) {
-                            $(".con-title").html(data.title);
-                            $(".con-time").html(data.time);
-                            $(".con-con").html(data.content);
-                            $("#artibody").removeClass("content");
-                        },
-                        error: function (err) {
-                            console.log(err);
-                        }
-                    });
-                }
-
             },
             error: function (err) {
                 console.log(err);
@@ -145,3 +122,20 @@ $(document).ready(function () {
 
 
 });
+function getContent(url, aid) {
+    $.ajax({
+        type: "get",
+        url: url + aid,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            $(".con-title").html(data.title);
+            $(".con-time").html(data.time);
+            $(".con-con").html(data.content);
+            $("#artibody").removeClass("content");
+        },
+        error: function (err) {
+            console.log(err);
+        }
+    });
+}

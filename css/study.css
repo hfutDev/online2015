@@ -322,7 +322,6 @@
     text-align: left;
 }
 .paint-body li{
-    width: 271px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

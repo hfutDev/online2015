@@ -8,12 +8,11 @@ $(document).ready(function () {
 
     var baseurl = "/news/news/1/10000/";
     var url1;
-    getNews("/news/news/1/10000");
     $("body").on('click', '[data-action]', function () {
         var actionName = $(this).data('action');
         switch (actionName) {
             case 'a-all':
-                url1="/news/news/1/10000";
+                url1 = baseurl;
                 getNews(url1);
                 break;
             case 'a-tongzhi':
@@ -51,21 +50,18 @@ $(document).ready(function () {
         }
     });
 
-    var url2 = "/news/news/";
-    var clientWid = $(window).width();
-    var rate = clientWid / 1920;
+    getNews(baseurl);
 
-    $(".info-div").css("width", $(".info-img").width() / 2 - 40);
-    $(".info-div").find("img").css("width", $(".info-img").width() / 2 - 40);
-    $(".info-div").find("p").css({
-        "width": $(".info-img").width() / 4 - 24
+    $(window).resize(function() {
+        $(".info-con").empty();
+        getNews(baseurl);
     });
 
+    var url2 = "/news/news/";
 
     function getNews(url) {
         $.ajax({
             type: "get",
-            //url: url+i+"/"+item,
             url: url,
             dataType: "json",
             success: function (data) {
@@ -75,20 +71,15 @@ $(document).ready(function () {
                     $(".info-more").hide();
                     return;
                 }
-                if(url=="/news/news/1/10000"){
+                if(url=="/news/news/1/10000/"){
                     $(".btn-all").addClass("curr");
                 }
+                var clientWid = $(window).width();
+                var rate = clientWid / 1920;
                 $(".info-more").show();
-                var item = 11 * rate;
+                var item = 13 * rate;
                 item = Math.round(item);
                 initPagination(item);
-                var a = $(".info-con").find("li").height();
-                var b = $(".info-con").find("li").css("paddingTop");
-                var c = parseInt(a) + parseInt(b) * 2;
-                var itemnum = parseInt(item) + 1;
-                var xh = parseInt(c * itemnum) - 31;
-                $(".info-con").css("height", xh);
-                //$(".info-list").find("li:last").css("borderBottom", "1px solid #ddd");
                 function handlePaginationClick(page_index, jq) {
                     page_index++;
                     $(".info-list").find("ul").empty();

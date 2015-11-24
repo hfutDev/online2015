@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
     <meta name="MobileOptimized" content="320">
-    <title>新闻·资讯</title>
+    <title>校园·速递</title>
     <link rel="icon" href="images/index/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,7 +24,7 @@
     <script src="./js/html5shiv.js"></script>
     <![endif]-->
 </head>
-<body style="overflow:hidden;">
+<body>
 <div class="nav">
     <div class="nav-logo">
         <a class="logo" href="#">
@@ -64,7 +64,7 @@
     <div class="main" style="height: auto !important;">
         <!-- main content start-->
         <div>
-            <div>
+            <div style="overflow-y: hidden;">
                 <div class="info-img">
                     <div class="info-div" data-action="a-tongzhi">
                         <img src="images/info/info-1.jpg">
@@ -115,12 +115,17 @@
                     </h3>
                     <ul class="info-con">
                     </ul>
-                    <button class="btn-all" data-action="a-all">所有</button>
-                    <div class="info-more">
-                        <div class="searchresult_pagination"></div>
-                    </div>
+
+                </div>
+
+            </div>
+            <div style="float: right">
+                <button class="btn-all" data-action="a-all">所有</button>
+                <div class="info-more">
+                    <div class="searchresult_pagination"></div>
                 </div>
             </div>
+
         </div>
         <!-- main content end-->
     </div>
